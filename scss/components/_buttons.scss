@@ -1,0 +1,26 @@
+.btn{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px black;
+    box-shadow: 0 0 1px #fff inset;
+    height:48px;
+
+    a{
+    color:black;
+    font-size: 1.2em;
+    font-weight:700;
+    padding: 0 15px;
+    
+    }
+   
+    &-cursos{
+     
+    background-color: map-get($colors, purple-1 );
+    }
+    &-apuntes{
+        margin-left: 16px;
+        background-color: map-get($colors, blue-1 ); 
+    }
+}

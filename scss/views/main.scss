@@ -1,0 +1,43 @@
+main{
+    height:100vh;
+    background:linear-gradient(92.04deg, #0E1216 10.34%, rgba(19, 23, 26, 0) 45.28%, #0E1115 86.85%),url('../images/fondo-principal.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    .slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 15%;
+        font-family: map-get($fonts, font-2 );
+        &-title{
+           
+            line-height: 1em;
+            h1{
+               color: map-get($colors, yellow-1 );
+               font-size: 4em;
+               }
+            p{ 
+                color: map-get($colors, white);
+                font-size: 4em;
+            }
+        }
+        
+        h3{
+            color: map-get($colors, white );
+            font-size:1.5em;
+            margin-top:1.3em;
+        }
+    }   
+    .botones{
+        display:flex;
+        justify-content: center;
+        position:relative;
+        top: 45vh;
+
+    }    
+}
