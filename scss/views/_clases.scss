@@ -1,0 +1,16 @@
+.clases{
+
+    max-width: 70%;
+    padding-top:8%; 
+    height:50vh;
+
+    .clases-title{
+        color: map-get($colors,yellow-1);
+        font-size: 4.8em;
+        font-family:map-get($fonts, font-2 );
+    } 
+    .class-info{
+        @include txt-content;
+        margin-top: 20px;
+    }
+}

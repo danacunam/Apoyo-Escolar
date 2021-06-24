@@ -1,14 +1,15 @@
-#us{
+.nosotros{
 
     height: 100vh;
+    max-width: 70%; 
+    padding-top:6%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 70%;
-    padding: 10px;
+   
    
 .nosotros-top{
-    padding-top:6%;
+   
     
     &-title{
         color: map-get($colors,orange-1);
@@ -16,12 +17,7 @@
         font-family:map-get($fonts, font-2 );
     }
     &-info{
-       font-size: 1.3em; 
-       font-family: map-get($fonts, Roboto );
-       color: map-get($colors,dark-gray);
-       font-weight:400;   
-       margin-top: 1.2em;
-       
+       @include txt-content;  
     }
     }
     .reviews-title{

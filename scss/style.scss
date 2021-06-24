@@ -1,9 +1,13 @@
+@import 'utilities/_lists.scss';
 @import 'base/_fonts.scss';
 @import 'base/reset.scss';
-@import 'utilities/_lists.scss';
+@import 'utilities/_mixin.scss';
 @import 'layout/_header.scss';
 @import 'components/buttons';
 @import 'components/cuadros';
 @import 'views/main.scss';
 @import 'views/nosotros.scss';
 @import 'views/cursos.scss';
+@import 'views/clases.scss';
+@import 'views/apuntes.scss';
+@import 'views/contacto.scss';
