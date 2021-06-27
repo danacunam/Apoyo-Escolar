@@ -25,20 +25,25 @@ header {
   padding-top: 40px;
 }
 header .logo {
-  width: 25%;
-  position: relative;
-  left: 5%;
+  width: 25vw;
 }
 header .logo img {
   width: 25%;
+  position: relative;
+  left: 25%;
 }
 header .navigation-bar {
-  width: 50%;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
 }
 header .navigation-bar ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Roboto Condensed";
+  font-weight: bold;
+  padding-left: 0;
+  width: 620px;
 }
 header .navigation-bar ul .link {
   color: #F2F2F2;
@@ -67,12 +72,14 @@ header .navigation-bar ul .link-5:hover {
   border: solid 2px black;
   box-shadow: 0 0 1px #fff inset;
   height: 48px;
+  border-radius: 10px;
 }
 .btn a {
   color: black;
   font-size: 1.2em;
   font-weight: 700;
   padding: 0 15px;
+  font-family: "Roboto Condensed";
 }
 .btn-cursos {
   background-color: #AD8FF5;
@@ -152,6 +159,7 @@ header .navigation-bar ul .link-5:hover {
 .consultas-box-text {
   font-size: 1.3em;
   margin-bottom: 0;
+  color: white;
 }
 .consultas-box-text i {
   font-size: 1em;
@@ -185,7 +193,7 @@ header .navigation-bar ul .link-5:hover {
 
 main {
   height: 100vh;
-  background: linear-gradient(92.04deg, #0E1216 10.34%, rgba(19, 23, 26, 0) 45.28%, #0E1115 86.85%), url("../images/fondo-principal.png");
+  background-image: url("../images/fondo-principal.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -338,7 +346,6 @@ main .botones {
   height: 200px;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid black;
   border-top: 2px dashed black;
 }
 #cursos .cursos-content .datos-banking .datos-contenedor {
@@ -362,22 +369,33 @@ main .botones {
 }
 
 .clases {
-  max-width: 70%;
-  padding-top: 8%;
-  height: 50vh;
+  height: 400px;
+  background-image: url("../images/fondo-clases.png");
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.clases .clases-title {
+.clases .class-container {
+  width: 70%;
+  background: rgba(255, 255, 255, 0.95);
+  height: 60%;
+  text-align: center;
+}
+.clases .class-container .clases-title {
   color: #FEC92E;
   font-size: 4.8em;
   font-family: "Roboto Slab";
 }
-.clases .class-info {
+.clases .class-container .class-info {
   font-size: 1.3em;
   font-family: "Roboto";
   color: #3F4650;
   font-weight: 400;
   line-height: 1.3em;
   margin-top: 20px;
+  padding: 0 10vw;
 }
 
 .apuntes {

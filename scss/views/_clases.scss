@@ -1,8 +1,19 @@
 .clases{
 
-    max-width: 70%;
-    padding-top:8%; 
-    height:50vh;
+    height:400px;
+    background-image: url('../images/fondo-clases.png');
+    border-top: 2px solid black;
+    border-bottom:2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .class-container{
+       
+        width:70%;
+        background:rgba(255,255,255,0.95);
+        height:60%;
+        text-align: center;
 
     .clases-title{
         color: map-get($colors,yellow-1);
@@ -12,5 +23,8 @@
     .class-info{
         @include txt-content;
         margin-top: 20px;
+        padding: 0 10vw;
+    }
+
     }
 }

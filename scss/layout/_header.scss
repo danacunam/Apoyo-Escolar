@@ -4,22 +4,29 @@ header{
     padding-top: 40px;
     
     .logo{
-        width: 25%;
-        position:relative;
-        left: 5%;
+        width: 25vw;
+     
        
         img{
             width: 25%;
+            position:relative;
+            left: 25%;
         }
     }
 
     .navigation-bar{
-        width: 50%;
+       
+        width: 50vw;
+        display:flex;
+        justify-content: center;
         
         ul{
             display:flex;
-            justify-content: space-between;
+            justify-content: space-around;
             font-family:map-get($fonts, Roboto-condensed );
+            font-weight: bold;
+            padding-left:0;
+            width:620px;
             
             .link{
                 color:map-get($colors, lighter-gray );
