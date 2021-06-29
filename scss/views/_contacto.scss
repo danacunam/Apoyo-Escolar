@@ -31,8 +31,27 @@
             font-size: 1em;
         }
     }
+    .link-rs{
+        .rs-icon-c{
+            display:none;
+        }
+        &:hover{
+            .rs-icon{
+                display:none;
+            }
+            .rs-icon-c{
+                display:block;
+
+            }
+        }
+    }
 
     .rs-icon{
         margin: 0 2.5px;
+        width:30px;    
+        &-c{
+            @extend .rs-icon; 
+        }        
     }
+
 }

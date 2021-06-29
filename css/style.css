@@ -371,6 +371,8 @@ main .botones {
 .clases {
   height: 400px;
   background-image: url("../images/fondo-clases.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   display: flex;
@@ -466,8 +468,18 @@ main .botones {
   line-height: 1.3em;
   font-size: 1em;
 }
-.contacto .rs-icon {
+.contacto .link-rs .rs-icon-c {
+  display: none;
+}
+.contacto .link-rs:hover .rs-icon, .contacto .link-rs:hover .rs-icon-c {
+  display: none;
+}
+.contacto .link-rs:hover .rs-icon-c {
+  display: block;
+}
+.contacto .rs-icon, .contacto .rs-icon-c {
   margin: 0 2.5px;
+  width: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
