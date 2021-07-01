@@ -89,6 +89,29 @@ header .navigation-bar ul .link-5:hover {
   background-color: #8ADFDF;
 }
 
+.wa-button {
+  width: 195px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #25D366;
+  position: fixed;
+  bottom: 28px;
+  right: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: "Roboto";
+  font-weight: bold;
+  padding: 0 16px;
+}
+.wa-button p {
+  margin: 0;
+}
+.wa-button:hover {
+  color: white;
+}
+
 .review-box {
   width: 220px;
   height: 220px;

@@ -25,3 +25,25 @@
         background-color: map-get($colors, blue-1 ); 
     }
 }
+
+.wa-button{
+    width: 195px;
+    height:48px;
+    border-radius: 8px;
+    background-color: map-get($colors,green-w );
+    position:fixed;
+    bottom:28px;
+    right:21px;
+    display:flex;
+    align-items: center ;
+    justify-content: space-around;
+    color:white;
+    font-family: map-get($fonts, Roboto );
+    font-weight:bold; 
+    padding:0 16px;
+    
+        p{margin:0;}
+        &:hover{
+            color:white;
+        }
+}
