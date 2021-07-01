@@ -1,8 +1,9 @@
+
 .nosotros{
 
     height: 100vh;
     max-width: 70%; 
-    padding-top:6%;
+    padding-top:$pt-sections;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

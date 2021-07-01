@@ -12,7 +12,7 @@ main{
         align-items: center;
         text-align: center;
         position: relative;
-        top: 15%;
+        top: 40%;
         font-family: map-get($fonts, font-2 );
         &-title{
            
@@ -37,7 +37,7 @@ main{
         display:flex;
         justify-content: center;
         position:relative;
-        top: 45vh;
+        top: 55vh;
 
     }    
 }

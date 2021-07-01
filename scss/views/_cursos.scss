@@ -2,7 +2,7 @@
 
    
     max-width: 70%;
-    padding-top:6%; 
+    padding-top:$pt-sections; 
 
     .cursos-title{
         color: map-get($colors,purple-1);

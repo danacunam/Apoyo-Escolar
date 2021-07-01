@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 * {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 14px;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 a {
@@ -21,75 +21,84 @@ hr {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding-top: 40px;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
 }
 header .logo {
   width: 25vw;
 }
 header .logo img {
-  width: 25%;
+  width: 14%;
   position: relative;
   left: 25%;
 }
-header .navigation-bar {
-  width: 50vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+header .nav-container {
+  width: 75vw;
 }
-header .navigation-bar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
+header .nav-container .navigation-bar {
+  width: 66%;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+}
+header .nav-container .navigation-bar ul {
+  display: flex;
+  justify-content: space-around;
   font-family: "Roboto Condensed";
   font-weight: bold;
   padding-left: 0;
   width: 620px;
 }
-header .navigation-bar ul .link {
+header .nav-container .navigation-bar ul .link {
   color: #F2F2F2;
   font-size: 1em;
 }
-header .navigation-bar ul .link-1:hover {
+header .nav-container .navigation-bar ul .link-1:hover {
   color: #FD982D;
 }
-header .navigation-bar ul .link-2:hover {
+header .nav-container .navigation-bar ul .link-2:hover {
   color: #AD8FF5;
 }
-header .navigation-bar ul .link-3:hover {
+header .nav-container .navigation-bar ul .link-3:hover {
   color: #FEC92E;
 }
-header .navigation-bar ul .link-4:hover {
+header .nav-container .navigation-bar ul .link-4:hover {
   color: #8ADFDF;
 }
-header .navigation-bar ul .link-5:hover {
+header .nav-container .navigation-bar ul .link-5:hover {
   color: #FD5A33;
 }
 
+.header-fixed {
+  animation: BGchange 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+.header-init {
+  animation: BGreset 0.1s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes BGchange {
+  100% {
+    background-color: black;
+    padding: 20px 0;
+  }
+}
+@keyframes BGreset {
+  100% {
+    background-color: none;
+    padding-top: 40px;
+  }
+}
 .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border: solid 2px black;
-  -webkit-box-shadow: 0 0 1px #fff inset;
-          box-shadow: 0 0 1px #fff inset;
+  box-shadow: 0 0 1px #fff inset;
   height: 48px;
   border-radius: 10px;
 }
@@ -116,14 +125,9 @@ header .navigation-bar ul .link-5:hover {
   position: fixed;
   bottom: 28px;
   right: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   color: white;
   font-family: "Roboto";
   font-weight: bold;
@@ -148,15 +152,9 @@ header .navigation-bar ul .link-5:hover {
   height: 198px;
   border-radius: 10px;
   border: 3px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .cursos-box .inner-box, .cursos-box-6 .inner-box, .cursos-box-5 .inner-box, .cursos-box-4 .inner-box, .cursos-box-3 .inner-box, .cursos-box-2 .inner-box, .cursos-box-1 .inner-box {
   width: 70%;
@@ -200,19 +198,10 @@ header .navigation-bar ul .link-5:hover {
   border: 2px solid black;
   background-color: #AD8FF5;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 35px 0 35px 0;
   text-align: center;
   color: #3F4650;
@@ -234,19 +223,10 @@ header .navigation-bar ul .link-5:hover {
   border: 2px solid #3F4650;
   background-color: #FFFFFF;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0 10px 0;
   text-align: center;
   color: #3F4650;
@@ -271,22 +251,13 @@ main {
   overflow: hidden;
 }
 main .slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
-  top: 15%;
+  top: 40%;
   font-family: "Roboto Slab";
 }
 main .slide-title {
@@ -306,30 +277,19 @@ main .slide h3 {
   margin-top: 1.3em;
 }
 main .botones {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: relative;
-  top: 45vh;
+  top: 55vh;
 }
 
 .nosotros {
   height: 100vh;
   max-width: 70%;
-  padding-top: 6%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding-top: 8%;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .nosotros .nosotros-top-title {
   color: #FD982D;
@@ -346,26 +306,19 @@ main .botones {
 .nosotros .reviews-title {
   color: #A6A6A5;
   font-family: "Roboto Slab";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 1.2em;
 }
 .nosotros .review {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 0 10%;
 }
 
 #cursos {
   max-width: 70%;
-  padding-top: 6%;
+  padding-top: 8%;
 }
 #cursos .cursos-title {
   color: #AD8FF5;
@@ -373,16 +326,9 @@ main .botones {
   font-family: "Roboto Slab";
 }
 #cursos .cursos-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 #cursos .cursos-content-info, #cursos .cursos-content-info strong {
   font-size: 1.3em;
@@ -410,14 +356,10 @@ main .botones {
 #cursos .cursos-content .cursos-cuadros {
   margin-top: 90px;
   margin-bottom: 90px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 38px 30% 38px 30%;
   grid-template-columns: 30% 30% 30%;
   grid-gap: 38px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #cursos .cursos-content .curso-completo h3 {
   margin: 90px 0 20px 0;
@@ -429,16 +371,9 @@ main .botones {
   margin: 45px 0 65px 0;
 }
 #cursos .cursos-content .medios {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 #cursos .cursos-content .medios-title {
@@ -451,26 +386,17 @@ main .botones {
   padding-bottom: 20px;
 }
 #cursos .cursos-content .medios-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   width: 60%;
   height: 200px;
 }
 #cursos .cursos-content .datos-banking {
   width: 100%;
   height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-top: 2px dashed black;
 }
 #cursos .cursos-content .datos-banking .datos-contenedor {
@@ -500,15 +426,9 @@ main .botones {
   background-size: cover;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
 .clases .class-container {
   width: 70%;
@@ -533,7 +453,7 @@ main .botones {
 
 .apuntes {
   max-width: 70%;
-  padding-top: 6%;
+  padding-top: 8%;
   height: 100vh;
 }
 .apuntes .apuntes-title {
@@ -562,7 +482,7 @@ main .botones {
 
 .contacto {
   max-width: 70%;
-  padding-top: 6%;
+  padding-top: 8%;
   height: 100vh;
 }
 .contacto .contacto-title {
@@ -580,12 +500,8 @@ main .botones {
 }
 .contacto .mapa {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 40px;
 }
 .contacto .mapa iframe {
@@ -616,3 +532,5 @@ main .botones {
   margin: 0 2.5px;
   width: 30px;
 }
+
+/*# sourceMappingURL=style.css.map */

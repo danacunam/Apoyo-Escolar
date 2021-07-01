@@ -1,52 +1,88 @@
 header{
     display: flex;
-    align-items: baseline;
-    padding-top: 40px;
-    
+    align-items: center;
+    height:100px;
+    position:fixed;
+    z-index: 1;
+   
     .logo{
         width: 25vw;
      
        
         img{
-            width: 25%;
+            width: 14%;
             position:relative;
             left: 25%;
         }
     }
-
-    .navigation-bar{
-       
-        width: 50vw;
-        display:flex;
-        justify-content: center;
+    .nav-container{
+        width:75vw;
+        .navigation-bar{
         
-        ul{
+            width: 66%;
             display:flex;
-            justify-content: space-around;
-            font-family:map-get($fonts, Roboto-condensed );
-            font-weight: bold;
-            padding-left:0;
-            width:620px;
+            justify-content: center;
             
-            .link{
-                color:map-get($colors, lighter-gray );
-                font-size:1em;
-                &-1:hover{
-                    color:map-get($colors, orange-1 );
-                }
-                &-2:hover{
-                    color:map-get($colors, purple-1 );
-                }
-                &-3:hover{
-                    color:map-get($colors, yellow-1 );
-                }
-                &-4:hover{
-                    color:map-get($colors,blue-1 );
-                }
-                &-5:hover{
-                    color:map-get($colors,darker-orange );
+            ul{
+                display:flex;
+                justify-content: space-around;
+                font-family:map-get($fonts, Roboto-condensed );
+                font-weight: bold;
+                padding-left:0;
+                width:$nav-width;
+                
+                .link{
+                    color:map-get($colors, lighter-gray );
+                    font-size:1em;
+                    &-1
+                        {
+                         
+                        &:hover{
+                        color:map-get($colors, orange-1 );
+                        }
+                    }
+                    &-2:hover{
+                        color:map-get($colors, purple-1 );
+                    }
+                    &-3:hover{
+                        color:map-get($colors, yellow-1 );
+                    }
+                    &-4:hover{
+                        color:map-get($colors,blue-1 );
+                    }
+                    &-5:hover{
+                        color:map-get($colors,darker-orange );
+                    }
                 }
             }
         }
     }
+}
+
+.header-fixed{
+    animation: BGchange 0.8s ease;
+    animation-fill-mode: forwards;
+   
+    
+}
+
+.header-init{
+    animation: BGreset 0.1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes BGchange{
+    0%{};
+ 
+    100%{
+        background-color: black;
+    padding:20px 0;}
+
+}
+
+@keyframes BGreset{
+    0%{};
+    100%{background-color:none;
+        padding-top: 40px;}
+
 }
