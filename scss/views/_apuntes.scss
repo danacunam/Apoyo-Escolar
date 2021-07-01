@@ -12,14 +12,50 @@
     .apuntes-info{
         @include txt-content;
         margin-top: 20px;
-        strong{
-            font-size: 1em;
-        }
+      
     }
-    ul{
-        list-style-type: disc;
-        .apunte-item{
-            font-size:1em;
-            font-weight:400;
-        }    }
+
+.apuntes-all{
+   
+    display:flex;
+    margin-top:50px;
+   
+    .box-apuntes-container{
+        display:flex;
+        justify-content: flex-start;
+        width:20%;
+    }
+
+    .lista-apuntes{
+       line-height: 30px; 
+       ul{
+           list-style-type: disc;
+            
+                li{  
+                @include txt-content;
+                strong{
+                    font-size: 1em;
+                }
+                }
+                img{
+                    margin: 0 7px;
+                }
+                a{
+                    @include txt-content;
+                    font-size: 1em;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+    }
+       
+       
+    }
+   
+
+
+}
+
+
+  
 }

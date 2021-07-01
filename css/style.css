@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -179,6 +180,27 @@ header .nav-container .navigation-bar ul .link-5:hover {
 }
 .wa-button:hover {
   color: white;
+}
+
+.box-apuntes {
+  width: 90%;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.box-apuntes h4 {
+  margin: 3px 0 0 0;
+  font-size: 1.4em;
+  font-family: "Teko";
 }
 
 .review-box {
@@ -594,15 +616,50 @@ main .botones {
   line-height: 1.3em;
   margin-top: 20px;
 }
-.apuntes .apuntes-info strong {
-  font-size: 1em;
+.apuntes .apuntes-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
 }
-.apuntes ul {
+.apuntes .apuntes-all .box-apuntes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 20%;
+}
+.apuntes .apuntes-all .lista-apuntes {
+  line-height: 30px;
+}
+.apuntes .apuntes-all .lista-apuntes ul {
   list-style-type: disc;
 }
-.apuntes ul .apunte-item {
-  font-size: 1em;
+.apuntes .apuntes-all .lista-apuntes ul li {
+  font-size: 1.3em;
+  font-family: "Roboto";
+  color: #3F4650;
   font-weight: 400;
+  line-height: 1.3em;
+}
+.apuntes .apuntes-all .lista-apuntes ul li strong {
+  font-size: 1em;
+}
+.apuntes .apuntes-all .lista-apuntes ul img {
+  margin: 0 7px;
+}
+.apuntes .apuntes-all .lista-apuntes ul a {
+  font-size: 1.3em;
+  font-family: "Roboto";
+  color: #3F4650;
+  font-weight: 400;
+  line-height: 1.3em;
+  font-size: 1em;
+}
+.apuntes .apuntes-all .lista-apuntes ul a:hover {
+  opacity: 0.7;
 }
 
 .contacto {

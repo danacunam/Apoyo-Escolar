@@ -2,3 +2,4 @@
 /node_modules
 prepros.config
 /css/style.css.map
+/images/.DS_Store
