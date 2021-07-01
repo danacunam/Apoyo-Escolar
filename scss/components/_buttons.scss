@@ -47,3 +47,18 @@
             color:white;
         }
 }
+
+.box-apuntes{
+    width:90%;
+    height:45px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4{
+        margin: 3px 0 0 0;
+        font-size:1.4em;
+        font-family: map-get($fonts, font-3 );
+    }
+}
