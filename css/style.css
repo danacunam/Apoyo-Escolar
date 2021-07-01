@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 * {
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 14px;
 }
@@ -20,8 +21,12 @@ hr {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   padding-top: 40px;
 }
 header .logo {
@@ -34,12 +39,19 @@ header .logo img {
 }
 header .navigation-bar {
   width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header .navigation-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-family: "Roboto Condensed";
   font-weight: bold;
   padding-left: 0;
@@ -66,11 +78,18 @@ header .navigation-bar ul .link-5:hover {
 }
 
 .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: solid 2px black;
-  box-shadow: 0 0 1px #fff inset;
+  -webkit-box-shadow: 0 0 1px #fff inset;
+          box-shadow: 0 0 1px #fff inset;
   height: 48px;
   border-radius: 10px;
 }
@@ -89,6 +108,34 @@ header .navigation-bar ul .link-5:hover {
   background-color: #8ADFDF;
 }
 
+.wa-button {
+  width: 195px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #25D366;
+  position: fixed;
+  bottom: 28px;
+  right: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  font-family: "Roboto";
+  font-weight: bold;
+  padding: 0 16px;
+}
+.wa-button p {
+  margin: 0;
+}
+.wa-button:hover {
+  color: white;
+}
+
 .review-box {
   width: 220px;
   height: 220px;
@@ -101,9 +148,15 @@ header .navigation-bar ul .link-5:hover {
   height: 198px;
   border-radius: 10px;
   border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .cursos-box .inner-box, .cursos-box-6 .inner-box, .cursos-box-5 .inner-box, .cursos-box-4 .inner-box, .cursos-box-3 .inner-box, .cursos-box-2 .inner-box, .cursos-box-1 .inner-box {
   width: 70%;
@@ -147,10 +200,19 @@ header .navigation-bar ul .link-5:hover {
   border: 2px solid black;
   background-color: #AD8FF5;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 35px 0 35px 0;
   text-align: center;
   color: #3F4650;
@@ -172,10 +234,19 @@ header .navigation-bar ul .link-5:hover {
   border: 2px solid #3F4650;
   background-color: #FFFFFF;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10px 0 10px 0;
   text-align: center;
   color: #3F4650;
@@ -200,10 +271,19 @@ main {
   overflow: hidden;
 }
 main .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   position: relative;
   top: 15%;
@@ -226,8 +306,12 @@ main .slide h3 {
   margin-top: 1.3em;
 }
 main .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   top: 45vh;
 }
@@ -236,9 +320,16 @@ main .botones {
   height: 100vh;
   max-width: 70%;
   padding-top: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .nosotros .nosotros-top-title {
   color: #FD982D;
@@ -255,13 +346,20 @@ main .botones {
 .nosotros .reviews-title {
   color: #A6A6A5;
   font-family: "Roboto Slab";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1.2em;
 }
 .nosotros .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0 10%;
 }
 
@@ -275,9 +373,16 @@ main .botones {
   font-family: "Roboto Slab";
 }
 #cursos .cursos-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #cursos .cursos-content-info, #cursos .cursos-content-info strong {
   font-size: 1.3em;
@@ -305,10 +410,14 @@ main .botones {
 #cursos .cursos-content .cursos-cuadros {
   margin-top: 90px;
   margin-bottom: 90px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 30% 38px 30% 38px 30%;
   grid-template-columns: 30% 30% 30%;
   grid-gap: 38px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #cursos .cursos-content .curso-completo h3 {
   margin: 90px 0 20px 0;
@@ -320,9 +429,16 @@ main .botones {
   margin: 45px 0 65px 0;
 }
 #cursos .cursos-content .medios {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 #cursos .cursos-content .medios-title {
@@ -335,17 +451,26 @@ main .botones {
   padding-bottom: 20px;
 }
 #cursos .cursos-content .medios-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 60%;
   height: 200px;
 }
 #cursos .cursos-content .datos-banking {
   width: 100%;
   height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 2px dashed black;
 }
 #cursos .cursos-content .datos-banking .datos-contenedor {
@@ -375,9 +500,15 @@ main .botones {
   background-size: cover;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .clases .class-container {
   width: 70%;
@@ -449,8 +580,12 @@ main .botones {
 }
 .contacto .mapa {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 40px;
 }
 .contacto .mapa iframe {
@@ -481,5 +616,3 @@ main .botones {
   margin: 0 2.5px;
   width: 30px;
 }
-
-/*# sourceMappingURL=style.css.map */
