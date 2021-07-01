@@ -1,7 +1,4 @@
 .DS_Store
 /node_modules
-<<<<<<< HEAD
 prepros.config
-=======
-prepros.config
->>>>>>> wabutton
+/css/style.css.map
