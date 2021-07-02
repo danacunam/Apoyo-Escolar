@@ -8,6 +8,10 @@
   font-size: 14px;
 }
 
+body {
+  position: relative;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -153,6 +157,23 @@ footer .ft-cr p {
 .btn-apuntes {
   margin-left: 16px;
   background-color: #8ADFDF;
+}
+
+.slide-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #FEC92E;
+  padding: 0;
+}
+
+.active {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FEC92E;
+  border: 1px solid black;
 }
 
 .wa-button {
@@ -315,6 +336,9 @@ main .slide {
   top: 30%;
   font-family: "Roboto Slab";
 }
+main .slide .slides {
+  height: 150px;
+}
 main .slide-title {
   line-height: 1em;
 }
@@ -330,6 +354,13 @@ main .slide h3 {
   color: #FFFFFF;
   font-size: 1.5em;
   margin-top: 1.3em;
+}
+main .slide .selectores {
+  padding-top: 30px;
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 main .botones {
   display: flex;
@@ -513,7 +544,7 @@ main .botones {
 }
 
 .clases {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 8%;
   max-width: 70%;
 }
@@ -609,7 +640,7 @@ main .botones {
 .contacto {
   max-width: 70%;
   padding-top: 8%;
-  min-height: 90vh;
+  min-height: 95vh;
 }
 .contacto .contacto-title {
   color: #FD982D;
