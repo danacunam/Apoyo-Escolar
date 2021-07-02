@@ -21,10 +21,16 @@
     &-cursos{
      
     background-color: map-get($colors, purple-1 );
+        &:hover{
+            background-color:lighten(map-get($colors, purple-1 ),4%);
+        }
     }
     &-apuntes{
         margin-left: 16px;
         background-color: map-get($colors, blue-1 ); 
+        &:hover{
+            background-color:lighten(map-get($colors,blue-1 ),4%);
+        }
     }
 }
 

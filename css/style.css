@@ -197,9 +197,15 @@ footer .ft-cr p {
 .btn-cursos {
   background-color: #AD8FF5;
 }
+.btn-cursos:hover {
+  background-color: #bba2f7;
+}
 .btn-apuntes {
   margin-left: 16px;
   background-color: #8ADFDF;
+}
+.btn-apuntes:hover {
+  background-color: #9ae3e3;
 }
 
 .slide-btn {
@@ -420,8 +426,8 @@ main .slide {
 }
 main .slide .slides {
   height: 150px;
-  -webkit-animation: slidesAnimation 5.1s linear;
-          animation: slidesAnimation 5.1s linear;
+  -webkit-animation: slidesAnimation 5.3s linear;
+          animation: slidesAnimation 5.3s linear;
   position: relative;
   right: 0;
 }
