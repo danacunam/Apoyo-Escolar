@@ -10,7 +10,7 @@ header{
      
        
         img{
-            width: 14%;
+            width: 60px;
             position:relative;
             left: 25%;
         }
@@ -41,8 +41,10 @@ header{
                         color:map-get($colors, orange-1 );
                         }
                     }
-                    &-2:hover{
-                        color:map-get($colors, purple-1 );
+                    &-2{
+                        &:hover{color:map-get($colors, purple-1 );}
+                        &-a{color:map-get($colors, purple-1 );}
+                        
                     }
                     &-3:hover{
                         color:map-get($colors, yellow-1 );

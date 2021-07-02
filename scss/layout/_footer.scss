@@ -1,0 +1,30 @@
+footer{
+    height: 35px;
+    border-top: 1px solid black;
+    display:flex;
+    align-items: center;
+
+    .footer-info{
+        width:70%;
+
+        p{
+            @include txt-footer;
+            padding-left:28px;
+           
+            strong{
+                font-size: 1em;
+            }
+        }
+    }
+
+    .ft-cr{
+        width:30%;
+        display:flex;
+        justify-content: flex-end;
+        p{   
+         @include txt-footer;
+         padding-right: 28px;
+        }
+
+    }
+}

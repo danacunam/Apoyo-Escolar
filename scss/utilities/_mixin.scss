@@ -8,8 +8,17 @@
    
 }
 
-@mixin dashed-hr{
-    border-top: 2px dashed black;
-    width:100%;
-    opacity:1;
+@mixin cursos-block {
+    padding: 40px 0 ;
+    border-bottom:1px dashed black;
+    .cursos-content-info{
+        width: 100%;
+        }  
+}
+
+@mixin txt-footer{
+            font-family:map-get($fonts, Roboto );
+            font-size: 0.7em;
+            margin:0;
+            color: map-get($colors, dark-gray );
 }

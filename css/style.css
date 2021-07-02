@@ -37,7 +37,7 @@ header .logo {
   width: 25vw;
 }
 header .logo img {
-  width: 14%;
+  width: 60px;
   position: relative;
   left: 25%;
 }
@@ -72,6 +72,9 @@ header .nav-container .navigation-bar ul .link-1:hover {
   color: #FD982D;
 }
 header .nav-container .navigation-bar ul .link-2:hover {
+  color: #AD8FF5;
+}
+header .nav-container .navigation-bar ul .link-2-a {
   color: #AD8FF5;
 }
 header .nav-container .navigation-bar ul .link-3:hover {
@@ -123,6 +126,46 @@ header .nav-container .navigation-bar ul .link-5:hover {
     padding-top: 40px;
   }
 }
+footer {
+  height: 35px;
+  border-top: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer-info {
+  width: 70%;
+}
+footer .footer-info p {
+  font-family: "Roboto";
+  font-size: 0.7em;
+  margin: 0;
+  color: #3F4650;
+  padding-left: 28px;
+}
+footer .footer-info p strong {
+  font-size: 1em;
+}
+footer .ft-cr {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+footer .ft-cr p {
+  font-family: "Roboto";
+  font-size: 0.7em;
+  margin: 0;
+  color: #3F4650;
+  padding-right: 28px;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,7 +427,6 @@ main .botones {
 }
 
 .nosotros {
-  height: 100vh;
   max-width: 70%;
   padding-top: 8%;
   display: -webkit-box;
@@ -427,17 +469,27 @@ main .botones {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 10%;
+  padding: 60px 10%;
 }
 
 #cursos {
   max-width: 70%;
-  padding-top: 8%;
+  padding: 100px 0;
 }
-#cursos .cursos-title {
+#cursos .cursos-top {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#cursos .cursos-top .cursos-title {
   color: #AD8FF5;
   font-size: 4.8em;
   font-family: "Roboto Slab";
+  margin-bottom: 20px;
 }
 #cursos .cursos-content {
   display: -webkit-box;
@@ -447,9 +499,6 @@ main .botones {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 #cursos .cursos-content-info, #cursos .cursos-content-info strong {
   font-size: 1.3em;
@@ -458,6 +507,7 @@ main .botones {
   font-weight: 400;
   line-height: 1.3em;
   list-style: disc;
+  width: 80%;
 }
 #cursos .cursos-content-info strong {
   font-weight: bold;
@@ -473,10 +523,30 @@ main .botones {
   font-weight: 400;
   line-height: 1.3em;
   margin-top: 0;
+  line-height: 25px;
+}
+#cursos .cursos-content .first-block {
+  padding-bottom: 40px;
+  border-bottom: 1px dashed black;
+}
+#cursos .cursos-content .second-block {
+  padding: 40px 0;
+  border-bottom: 1px dashed black;
+}
+#cursos .cursos-content .second-block .cursos-content-info, #cursos .cursos-content .second-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .second-block strong {
+  width: 100%;
+}
+#cursos .cursos-content .third-block {
+  padding: 40px 0;
+  border-bottom: 1px dashed black;
+}
+#cursos .cursos-content .third-block .cursos-content-info, #cursos .cursos-content .third-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .third-block strong {
+  width: 100%;
 }
 #cursos .cursos-content .cursos-cuadros {
-  margin-top: 90px;
-  margin-bottom: 90px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  margin: 90px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 38px 30% 38px 30%;
@@ -486,16 +556,22 @@ main .botones {
       -ms-flex-align: center;
           align-items: center;
 }
-#cursos .cursos-content .curso-completo h3 {
-  margin: 90px 0 20px 0;
+#cursos .curso-completo h3 {
+  margin-top: 40px;
+  padding-bottom: 30px;
   color: #3F4650;
   font-family: "Roboto Condensed";
   font-weight: 700;
+  text-align: center;
+  border-bottom: 1px dashed black;
 }
-#cursos .cursos-content .curso-completo .precios {
+#cursos .curso-completo .precios {
   margin: 45px 0 65px 0;
 }
-#cursos .cursos-content .medios {
+#cursos .curso-completo-block {
+  padding-top: 30px;
+}
+#cursos .medios {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,7 +584,7 @@ main .botones {
           align-items: center;
   width: 100%;
 }
-#cursos .cursos-content .medios-title {
+#cursos .medios-title {
   color: #3F4650;
   font-weight: 700;
   font-size: 1.4em;
@@ -517,7 +593,7 @@ main .botones {
   border-bottom: 2px solid black;
   padding-bottom: 20px;
 }
-#cursos .cursos-content .medios-logo {
+#cursos .medios-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,7 +605,7 @@ main .botones {
   width: 60%;
   height: 200px;
 }
-#cursos .cursos-content .datos-banking {
+#cursos .datos-banking {
   width: 100%;
   height: 200px;
   display: -webkit-box;
@@ -540,18 +616,18 @@ main .botones {
           align-items: center;
   border-top: 2px dashed black;
 }
-#cursos .cursos-content .datos-banking .datos-contenedor {
+#cursos .datos-banking .datos-contenedor {
   width: 45%;
   text-align: right;
 }
-#cursos .cursos-content .datos-banking .datos-contenedor .datos-title {
+#cursos .datos-banking .datos-contenedor .datos-title {
   padding-right: 40px;
   font-weight: 700;
   font-size: 1em;
   font-family: "Roboto";
   color: #3F4650;
 }
-#cursos .cursos-content .datos-banking .cbu {
+#cursos .datos-banking .cbu {
   width: 65%;
   border-left: 2px dashed black;
   height: 60%;
@@ -561,6 +637,7 @@ main .botones {
 }
 
 .clases {
+  margin-top: 8%;
   height: 400px;
   background-image: url("../images/fondo-clases.png");
   background-repeat: no-repeat;
@@ -665,7 +742,7 @@ main .botones {
 .contacto {
   max-width: 70%;
   padding-top: 8%;
-  height: 100vh;
+  height: 90vh;
 }
 .contacto .contacto-title {
   color: #FD982D;
