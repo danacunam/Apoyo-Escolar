@@ -8,15 +8,19 @@ main{
     .slide{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         text-align: center;
         position: relative;
         top: 30%;
         font-family: map-get($fonts, font-2 );
+        width:100vw;
         .slides{
 
             height:150px;
+            animation: slidesAnimation 5.1s linear;
+            position:relative;
+            right:0;
         }
         &-title{
            
@@ -37,14 +41,19 @@ main{
             margin-top:1.3em;
         }
 
-        .selectores{
-            padding-top:30px;
-        width:40px;   
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-               
-        }
+        .selectores-container{ 
+            width:100vw;
+            display:flex;
+            justify-content: center;
+                .selectores{
+                    padding-top:30px;
+                    width:50px;   
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                        
+                    }
+                }
     }   
     .botones{
         display:flex;
@@ -53,4 +62,28 @@ main{
         top: 50%;
 
     }    
+}
+
+@keyframes slidesAnimation{
+
+    0% { opacity: 0;
+    right:-70vw;}
+    5%{
+        opacity:0.5;
+        right:-35vw;
+       }
+    10%{
+        opacity:1;
+        right:0vw;
+    }
+    90%{
+        opacity:1;
+        right:0vw;
+    }
+    95% {
+        opacity:0.5;
+        right:35vw;
+    }
+    100%{opacity:0;
+        right:70vw}
 }
