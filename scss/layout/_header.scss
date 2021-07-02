@@ -1,7 +1,7 @@
 header{
     display: flex;
     align-items: center;
-    height:100px;
+    height: 119px;
     position:fixed;
     z-index: 1;
    
@@ -37,7 +37,9 @@ header{
                     &-1
                         {
                          
-                        &:hover{
+                        &:hover
+                        
+                        {
                         color:map-get($colors, orange-1 );
                         }
                     }
@@ -64,7 +66,11 @@ header{
 .header-fixed{
     animation: BGchange 0.8s ease;
     animation-fill-mode: forwards;
-   
+   &-c{
+    //    padding-top: 40px;
+    //    padding-bottom: 20œpx;
+       background-color: black;
+   }
     
 }
 
@@ -78,13 +84,14 @@ header{
  
     100%{
         background-color: black;
-    padding:20px 0;}
+        padding:8px 0;}
 
 }
 
 @keyframes BGreset{
     0%{};
     100%{background-color:none;
-        padding-top: 40px;}
+        // padding-top: 40px;
+    }
 
 }

@@ -1,15 +1,19 @@
 
 .nosotros{
 
-    max-width: 70%; 
+    background-image: url('../images/bg-nosotros.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-top:$pt-sections;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
-   
+    min-height:100vh;
+    
 .nosotros-top{
-   
+     width:70%;
+     align-self: center;
     
     &-title{
         color: map-get($colors,orange-1);

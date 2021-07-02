@@ -1,32 +1,25 @@
 .clases{
-    margin-top:$pt-sections;
-    height:400px;
-    background-image: url('../images/fondo-clases.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 2px solid black;
-    border-bottom:2px solid black;
-    display:flex;
-    justify-content: center;
-    align-items: flex-end;
-
-    .class-container{
-       
-        width:70%;
-        background:rgba(255,255,255,0.95);
-        height:60%;
-        text-align: center;
-
-    .clases-title{
+   
+    height:100vh;
+    padding-top:$pt-sections;
+    max-width: 70%;
+    
+    &-title{
         color: map-get($colors,yellow-1);
         font-size: 4.8em;
         font-family:map-get($fonts, font-2 );
     } 
-    .class-info{
-        @include txt-content;
-        margin-top: 20px;
-        padding: 0 10vw;
-    }
 
+    .p-type-a{ 
+        @include txt-class;
+       }
+    
+    .p-type-b{
+        padding-top:15px;
+        @include txt-class; 
     }
+  
 }
+
+
+

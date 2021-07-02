@@ -2,7 +2,7 @@
 
     max-width: 70%;
     padding-top:$pt-sections; 
-    height:100vh;
+    min-height:100vh;
 
     .apuntes-title{
         color: map-get($colors,blue-1);

@@ -1,5 +1,5 @@
 main{
-    height:100vh;
+    height:552px;
     background-image: url('../images/fondo-principal.png');
     background-repeat:no-repeat;
     background-size: cover;
@@ -12,7 +12,7 @@ main{
         align-items: center;
         text-align: center;
         position: relative;
-        top: 40%;
+        top: 30%;
         font-family: map-get($fonts, font-2 );
         &-title{
            
@@ -37,7 +37,7 @@ main{
         display:flex;
         justify-content: center;
         position:relative;
-        top: 55vh;
+        top: 50%;
 
     }    
 }

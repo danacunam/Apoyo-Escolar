@@ -1,3 +1,5 @@
+
+
 .btn{
 
     display:flex;
@@ -30,7 +32,7 @@
     width: 195px;
     height:48px;
     border-radius: 8px;
-    background-color: map-get($colors,green-w );
+    background-color:darken(map-get($colors,green-w ),2%);
     position:fixed;
     bottom:28px;
     right:21px;
@@ -45,6 +47,7 @@
         p{margin:0;}
         &:hover{
             color:white;
+            background-color:lighten(map-get($colors,green-w ),3%);
         }
 }
 

@@ -2,7 +2,7 @@
 
     max-width: 70%;
     padding-top:$pt-sections; 
-    height:90vh;
+    min-height:90vh;
 
     .contacto-title{
         color: map-get($colors,orange-1);

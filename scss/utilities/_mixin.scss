@@ -22,3 +22,14 @@
             margin:0;
             color: map-get($colors, dark-gray );
 }
+
+@mixin txt-class{
+    .class-info{
+        @include txt-content;
+        line-height: 1.3em;
+        strong{
+            font-size:1em;
+               }
+        
+    }
+}
