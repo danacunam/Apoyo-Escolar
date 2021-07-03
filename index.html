@@ -13,25 +13,27 @@
     <link rel="icon" href="images/favicon.ico">
 
 </head>
-<body>
-   
-<main id="main">
+<body data-bs-spy="scroll" data-bs-target="#navBar">
+
     <header id="header" class="header-init">
         <div class="logo">
            <a href="#main"><img src="images/logo.png" alt="logo de apoyo escolar" loading="lazy"></a> 
         </div>
         <div class="nav-container">
-            <nav class="navigation-bar">
+            <nav id="navBar" class="navigation-bar">
                 <ul>
-                    <li><a class="link link-1" href="#us">NOSOTROS</a ></li>
-                    <li ><a class="link link-2" href="pages/cursos.html">CURSOS</a ></li>
-                    <li><a class="link link-3" href="#class">CLASES</a ></li>
-                    <li><a class="link link-4" href="#notes">APUNTES</a ></li>
-                    <li><a class="link link-5" href="#contact">CONTACTO</a></li>
+                    <li><a class="nav-link nav-link-1" href="#us">NOSOTROS</a ></li>
+                    <li ><a class="nav-link nav-link-2" href="pages/cursos.html">CURSOS</a ></li>
+                    <li><a class="nav-link nav-link-3" href="#class">CLASES</a ></li>
+                    <li><a class="nav-link nav-link-4" href="#notes">APUNTES</a ></li>
+                    <li><a class="nav-link nav-link-5" href="#contact">CONTACTO</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    
+<main id="main">
+   
   
 <!--SECCION SLIDE -->
 <div id="txtSlide" class="carousel slide" data-bs-ride="carousel">

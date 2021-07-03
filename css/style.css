@@ -64,26 +64,23 @@ header .nav-container .navigation-bar ul {
   padding-left: 0;
   width: 620px;
 }
-header .nav-container .navigation-bar ul .link {
+header .nav-container .navigation-bar ul .nav-link {
   color: #F2F2F2;
   font-size: 1em;
 }
-header .nav-container .navigation-bar ul .link-1:hover {
+header .nav-container .navigation-bar ul .nav-link-1:hover, header .nav-container .navigation-bar ul .nav-link-1.active {
   color: #FD982D;
 }
-header .nav-container .navigation-bar ul .link-2:hover {
+header .nav-container .navigation-bar ul .nav-link-2:hover, header .nav-container .navigation-bar ul .nav-link-2.active, header .nav-container .navigation-bar ul .nav-link-2-a {
   color: #AD8FF5;
 }
-header .nav-container .navigation-bar ul .link-2-a {
-  color: #AD8FF5;
-}
-header .nav-container .navigation-bar ul .link-3:hover {
+header .nav-container .navigation-bar ul .nav-link-3:hover, header .nav-container .navigation-bar ul .nav-link-3.active {
   color: #FEC92E;
 }
-header .nav-container .navigation-bar ul .link-4:hover {
+header .nav-container .navigation-bar ul .nav-link-4:hover, header .nav-container .navigation-bar ul .nav-link-4.active {
   color: #8ADFDF;
 }
-header .nav-container .navigation-bar ul .link-5:hover {
+header .nav-container .navigation-bar ul .nav-link-5:hover, header .nav-container .navigation-bar ul .nav-link-5.active {
   color: #FD5A33;
 }
 
@@ -243,6 +240,7 @@ footer .ft-cr p {
   bottom: 28px;
   right: 21px;
   border: none;
+  z-index: 1;
 }
 .wa-button a {
   display: -webkit-box;
