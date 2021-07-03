@@ -14,7 +14,12 @@
     font-size: 1.2em;
     font-weight:700;
     padding: 0 15px;
-    font-family:map-get($fonts, Roboto-condensed)
+    font-family:map-get($fonts, Roboto-condensed);
+
+    &:hover{
+        color:lighten($color:black , $amount: 10%);
+    }
+     
     
     }
    
@@ -23,6 +28,7 @@
     background-color: map-get($colors, purple-1 );
         &:hover{
             background-color:lighten(map-get($colors, purple-1 ),4%);
+            
         }
     }
     &-apuntes{
@@ -34,26 +40,34 @@
     }
 }
 
+.carousel-indicators {
+        display:flex;
+        align-items: center;
+        bottom:-30px;
 
-.slide-btn{
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background-color:transparent;
-    border: 1px solid map-get($colors, yellow-1 );
-    padding:0;
-
+        [data-bs-target]{
+            width:10px;
+            height:10px;
+            border-radius:50%;
+            background-color:transparent;
+            border: 1px solid map-get($colors, yellow-1 );
+            padding:0;
+            margin: 0 7px;
+        }
+       
+        .active{
+            width:15px;
+            height:15px;
+            border-radius:50%;
+            background-color:map-get($colors, yellow-1 );
+            border: 1px solid black;
+            opacity:0.8;    
+           }
+        
 }
 
-.active{
-    width:15px;
-    height:15px;
-    border-radius:50%;
-    background-color:map-get($colors, yellow-1 );
-    border: 1px solid black;
-   
 
-}
+//BOTON WHATSAPP
 
 .wa-button{
     width: 195px;
@@ -63,32 +77,28 @@
     position:fixed;
     bottom:28px;
     right:21px;
-    display:flex;
-    align-items: center ;
-    justify-content: space-around;
-    color:white;
-    font-family: map-get($fonts, Roboto );
-    font-weight:bold; 
-    padding:0 16px;
-    
-        p{margin:0;}
+    border: none;
+            a{
+                display:flex;
+                align-items: center ;
+                justify-content: space-evenly;
+                color:white;
+                font-family: map-get($fonts, Roboto );
+                font-weight:bold; 
+                padding:0 6px;
+                &:hover{
+                    color: darken(white,5%);
+                }
+                    p{margin:0;}
+     
+                } 
+       
+       
         &:hover{
-            color:white;
+         
             background-color:lighten(map-get($colors,green-w ),3%);
         }
+        
 }
 
-.box-apuntes{
-    width:90%;
-    height:45px;
-    border: 2px solid black;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h4{
-        margin: 3px 0 0 0;
-        font-size:1.4em;
-        font-family: map-get($fonts, font-3 );
-    }
-}
+

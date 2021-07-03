@@ -5,56 +5,7 @@ main{
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    .slide{
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        text-align: center;
-        position: relative;
-        top: 30%;
-        font-family: map-get($fonts, font-2 );
-        width:100vw;
-        .slides{
-
-            height:150px;
-            animation: slidesAnimation 5.3s linear;
-            position:relative;
-            right:0;
-        }
-        &-title{
-           
-            line-height: 1em;
-            h1{
-               color: map-get($colors, yellow-1 );
-               font-size: 4em;
-               }
-            p{ 
-                color: map-get($colors, white);
-                font-size: 4em;
-            }
-        }
-        
-        h3{
-            color: map-get($colors, white );
-            font-size:1.5em;
-            margin-top:1.3em;
-        }
-
-        .selectores-container{ 
-            width:100vw;
-            display:flex;
-            justify-content: center;
-                .selectores{
-                    padding-top:30px;
-                    width:50px;   
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                        
-                    }
-                }
-    }   
+    
     .botones{
         display:flex;
         justify-content: center;
@@ -64,26 +15,3 @@ main{
     }    
 }
 
-@keyframes slidesAnimation{
-
-    0% { opacity: 0;
-    right:-70vw;}
-    5%{
-        opacity:0.5;
-        right:-35vw;
-       }
-    10%{
-        opacity:1;
-        right:0vw;
-    }
-    90%{
-        opacity:1;
-        right:0vw;
-    }
-    95% {
-        opacity:0.5;
-        right:35vw;
-    }
-    100%{opacity:0;
-        right:70vw}
-}

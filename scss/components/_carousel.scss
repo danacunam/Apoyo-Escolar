@@ -1,0 +1,44 @@
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    font-family: map-get($fonts, font-2 );
+    width:100vw;
+}   
+
+.carousel-item{
+
+    height: 200px;
+}
+
+.carousel-caption{
+   
+    
+    h1{
+        color: map-get($colors, yellow-1 );
+        font-size: 4em;
+        line-height: 0.8em;
+        span{
+            color: map-get($colors, white );
+            font-size:1em;  
+        }
+        
+         }
+  
+        
+        p{ 
+            color: map-get($colors, white);
+            font-size: 1.5em;
+        }
+    h2{
+        color: map-get($colors, yellow-1 );
+        font-size: 4em;
+        }
+  
+    
+}
+
+

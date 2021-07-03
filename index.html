@@ -6,14 +6,14 @@
     <!--BS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     <title>Apoyo Escolar</title>
     <link rel="icon" href="images/favicon.ico">
 
 </head>
-<body data-aos="fade">
+<body>
    
 <main id="main">
     <header id="header" class="header-init">
@@ -33,45 +33,37 @@
         </div>
     </header>
   
-<!--SECCION SLIDE (no tiene nada de slide aun, pero es referencial) -->
-    <section class="slide">
-       
-      <div class="slides">
-        <div class="slide-title">   
-            <h1>Prepará tus materias</h1>
-            <p>con nosotros.</p>
-        </div>
-            <h3>Te acompañamos en tu aprendizaje.</h3>
-            <!-- <div class="selectores">
-            <button class="slide-btn active" onclick="currentDiv(0)"></button>
-            <button class="slide-btn  " onclick="currentDiv(1)"></button>
-            </div> -->
-        </div> 
-        
-     <div class="slides">
-        <div class="slide-title">   
-            <h1>Aprobá</h1>
+<!--SECCION SLIDE -->
+<div id="txtSlide" class="carousel slide" data-bs-ride="carousel">
           
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#txtSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#txtSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>     
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item  active">
+        <div class="carousel-caption d-none d-md-block ">
+            <h1>Prepará tus materias<br><span> con nosotros</span></h1>
+            <p>Te acompañamos en tu aprendizaje.</p>
         </div>
-            <h3>seguimiento personalizado.</h3> 
-        <!-- <div class="selectores">   
-            <button class="slide-btn " onclick="currentDiv(0)"></button>
-            <button class="slide-btn active " onclick="currentDiv(1)"></button> 
-        </div> -->
-    </div>         
+    </div>
+    <div class="carousel-item ">
+        <div class="carousel-caption d-none d-md-block ">
+            
+                <h2>Aprobá</h2>   
+                <p>seguimiento personalizado.</p> 
+        </div>
+    </div> 
+    </div>
 
-        <div class="selectores-container">
-            <div class="selectores">
-                <button class="slide-btn " onclick="currentDiv(1)"></button>
-                <button class="slide-btn " onclick="currentDiv(2)"></button>
-            </div> 
-        </div>    
+</div>
 
-    </section>
-    
+      
+        
+
 <!--BOTONES-->
 
-  <div class="botones" data-aos="fade-up">  
+  <div class="botones " data-aos="fade-up">  
     <button class="btn btn-cursos">
         <a href="pages/cursos.html">VER CURSOS</a>
     </button>
@@ -79,13 +71,15 @@
         <a href="#notes">APUNTES GRATUITOS</a>
     </button>
   </div>
-
+  <button class="wa-button" data-aos="fade" data-aos-offset="-200">
+    <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" >
+        <img src="images/wa-white.png" alt="icono de WhatsApp">
+        <p>¿Dudas? ¡Escribinos!</p>
+    </a>
+    </button>
 </main>
 
-<a class="wa-button" href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" >
-    <img src="images/wa-white.png" alt="incono de WhatsApp">
-    <p>¿Dudas? ¡Escribinos!</p>
-</a>
+
 
 <!-- SECCION NOSOTROS-->
 
@@ -93,14 +87,14 @@
 <section id="us" class="container-fluid nosotros">
 
    
-    <div class="nosotros-top" data-aos="fade">
+    <div class="nosotros-top" >
       
 
-        <h2 class="nosotros-top-title"> Nosotros</h2>
-        <p class="nosotros-top-info">
+        <h2 class="nosotros-top-title" data-aos="fade" > Nosotros</h2>
+        <p class="nosotros-top-info" data-aos="fade" data-aos-duration="300">
             Somos un grupo de profesores con mas de 6 años de experiencia.
         </p>
-        <p class="nosotros-top-info">
+        <p class="nosotros-top-info" data-aos="fade" data-aos-duration="300">
             Damos clases y 
             cursos de todas las areas. Nos enfocamos en la atención personalizada, en el 
             seguimiento constante y en motivar a nuestros alumnos.
@@ -108,7 +102,7 @@
 
     </div>
     
-    <div class="reviews-title" data-aos="fade" data-aos-duration="200">
+    <div class="reviews-title" data-aos="fade" data-aos-duration="300">
         <h2>Qué dicen nuestros estudiantes</h2>
     </div>
 
@@ -138,11 +132,11 @@
 
 <section id="class" class="clases container">
      
-    <div> 
+    <div data-aos="fade"> 
         <h2 class="clases-title">Clases</h2>
     </div>
 
-    <div class="p-type-a">
+    <div class="p-type-a" data-aos="fade" data-aos-duration="200">
         
         <p class="class-info">
         <strong>Clases presenciales</strong> <br>
@@ -150,7 +144,7 @@
         las clases presenciales quedan suspendidas.
         </p>
     </div>
-    <div class="p-type-b">
+    <div class="p-type-b" data-aos="fade" data-aos-duration="200">
         
         <p class="class-info">
         <strong>Clases Virtuales</strong> <br>
@@ -158,7 +152,7 @@
         tenés ordenadas y las podés ver cuando quieras. 
         </p>
     </div>
-    <div class="p-type-b">
+    <div class="p-type-b" data-aos="fade" data-aos-duration="200">
         <p class="class-info">
             Nos envías el contenido y te decimos en cuantas clases lo hacemos. 
             Son adaptadas a lo que vos necesites y las consultas son de lunes a
@@ -168,13 +162,13 @@
          </p>
 
     </div>
-    <div class="p-type-b">
+    <div class="p-type-b" data-aos="fade" data-aos-duration="200">
         <p class="class-info">
             Hasta que no hagas los ejercicios que te mandamos, para poder tener
             un seguimiento, no subimos la otra clase.
          </p>       
     </div>
-    <div class="p-type-a">
+    <div class="p-type-a" data-aos="fade" data-aos-duration="200">
         <p class="class-info">
         <strong>Resolución de trabajos</strong> <br>
         Nos envías y te lo hacemos con videos explicativos.
@@ -191,8 +185,8 @@
 
 <section id="notes" class="apuntes container">
 
-    <h2 class="apuntes-title">Apuntes</h2>
-    <p class="apuntes-info">
+    <h2 class="apuntes-title" data-aos="fade" data-aos-offset="100">Apuntes</h2>
+    <p class="apuntes-info" data-aos="fade" data-aos-duration="200">
         Apuntes disponibles para descargar. Para los apuntes de la
         versión paga podrás hacer click directamente en el link que 
         elijas y te llevará a WhatsApp para proceder con el pago y 
@@ -202,13 +196,13 @@
     <div class="apuntes-all">
       
         
-        <div class="box-apuntes-container">        
+        <div class="box-apuntes-container" data-aos="zoom-in" data-aos-duration="300">        
             <div class="box-apuntes">     
                 <h4>GRATUITOS</h4>
             </div>
         </div>
 
-        <div class="lista-apuntes">
+        <div class="lista-apuntes" data-aos="fade" data-aos-duration="300">
             <ul>
                 <li><a download href="download/propiedades-algebraicas.pdf">Propiedades algebraicas<img src="images/dl.png" alt=""></a></li>
                 <li><a download href="download/biofisica.pdf">Cinemática<img src="images/dl.png" alt=""></a></li>
@@ -223,13 +217,13 @@
     <div class="apuntes-all">
       
         
-        <div class="box-apuntes-container">        
+        <div class="box-apuntes-container" data-aos="zoom-in" data-aos-duration="400">        
             <div class="box-apuntes">     
                 <h4>DE PAGO</h4>
             </div>
         </div>
 
-        <div class="lista-apuntes">
+        <div class="lista-apuntes" data-aos="fade" data-aos-duration="400">
             <ul>
                 <li class="apunte-item">Compilado de finales <strong>matemática51 CBC</strong> ($300)</li>
                 <li class="apunte-item">Compilado de finales <strong>biofísica CBC</strong> ($300)</li>
@@ -247,9 +241,9 @@
 
 <section id="contact" class="contacto container">
 
-    <h2 class="contacto-title">Contacto</h2>
+    <h2 class="contacto-title" data-aos="fade" data-aos-duration="200">Contacto</h2>
     
-    <div class="mapa">
+    <div class="mapa" data-aos="fade" data-aos-duration="300">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.949844503435!2d-58.50624304922636!3d-34.655969567675704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9013c07331f%3A0x3dcefb2674fbdc0c!2sMartiniano%20Leguizam%C3%B3n%201875%2C%20C1440DYM%20CABA!5e0!3m2!1ses!2sar!4v1624567147310!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
