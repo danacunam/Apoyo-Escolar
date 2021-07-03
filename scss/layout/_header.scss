@@ -1,94 +1,103 @@
-header{
-    display: flex;
-    align-items: center;
-    height: 119px;
-    position:fixed;
-    z-index: 1;
-   
-    .logo{
-        width: 25vw;
-     
-       
-        img{
-            width: 60px;
-            position:relative;
-            left: 25%;
-        }
+header {
+  display: flex;
+  align-items: center;
+  height: 119px;
+  position: fixed;
+  z-index: 1;
+
+  .logo {
+    width: 25vw;
+
+    img {
+      width: 60px;
+      position: relative;
+      left: 25%;
     }
-    .nav-container{
-        width:75vw;
-        .navigation-bar{
-        
-            width: 66%;
-            display:flex;
-            justify-content: center;
-            
-            ul{
-                display:flex;
-                justify-content: space-around;
-                font-family:map-get($fonts, Roboto-condensed );
-                font-weight: bold;
-                padding-left:0;
-                width:$nav-width;
-                
-                .link{
-                    color:map-get($colors, lighter-gray );
-                    font-size:1em;
-                    &-1
-                        {
-                         
-                        &:hover
-                        
-                        {
-                        color:map-get($colors, orange-1 );
-                        }
-                    }
-                    &-2{
-                        &:hover{color:map-get($colors, purple-1 );}
-                        &-a{color:map-get($colors, purple-1 );}
-                        
-                    }
-                    &-3:hover{
-                        color:map-get($colors, yellow-1 );
-                    }
-                    &-4:hover{
-                        color:map-get($colors,blue-1 );
-                    }
-                    &-5:hover{
-                        color:map-get($colors,darker-orange );
-                    }
-                }
+  }
+  .nav-container {
+    width: 75vw;
+    .navigation-bar {
+      width: 66%;
+      display: flex;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        font-family: map-get($fonts, Roboto-condensed);
+        font-weight: bold;
+        padding-left: 0;
+        width: $nav-width;
+
+        .nav-link {
+          color: map-get($colors, lighter-gray);
+          font-size: 1em;
+          &-1 {
+            &:hover,
+            &.active {
+              color: map-get($colors, orange-1);
             }
+          }
+          &-2 {
+            &:hover,
+            &.active,
+            &-a {
+              color: map-get($colors, purple-1);
+            }
+          }
+          &-3 {
+            &:hover,
+            &.active {
+              color: map-get($colors, yellow-1);
+            }
+          }
+
+          &-4 {
+            &:hover,
+            &.active {
+              color: map-get($colors, blue-1);
+            }
+          }
+          &-5 {
+            &:hover,
+            &.active {
+              color: map-get($colors, darker-orange);
+            }
+          }
         }
+      }
     }
+  }
 }
 
-.header-fixed{
-    animation: BGchange 0.8s ease;
-    animation-fill-mode: forwards;
-    &-c{
-        background-color: black;
-    }    
+.header-fixed {
+  animation: BGchange 0.8s ease;
+  animation-fill-mode: forwards;
+  &-c {
+    background-color: black;
+  }
 }
 
-.header-init{
-    animation: BGreset 0.1s ease;
-    animation-fill-mode: forwards;
+.header-init {
+  animation: BGreset 0.1s ease;
+  animation-fill-mode: forwards;
 }
 
-@keyframes BGchange{
-    0%{};
- 
-    100%{
-        background-color: black;
-        padding:8px 0;}
+@keyframes BGchange {
+  0% {
+  }
 
+  100% {
+    background-color: black;
+    padding: 8px 0;
+  }
 }
 
-@keyframes BGreset{
-    0%{};
-    100%{background-color:none;
-        // padding-top: 40px;
-    }
-
+@keyframes BGreset {
+  0% {
+  }
+  100% {
+    background-color: none;
+    // padding-top: 40px;
+  }
 }
