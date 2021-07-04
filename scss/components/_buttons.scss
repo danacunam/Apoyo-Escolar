@@ -38,6 +38,16 @@
             background-color:lighten(map-get($colors,blue-1 ),4%);
         }
     }
+
+    @include media(sm){
+        width:90%;
+        margin:0;
+        align-self: center;
+        &-cursos{
+            margin-bottom: 9px;
+        }
+
+    }
 }
 
 .carousel-indicators {

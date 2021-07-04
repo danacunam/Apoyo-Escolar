@@ -5,17 +5,53 @@ main{
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    
+    .mobile-titles{
+        &-1,&-2{display:none;}
+    }
     .botones{
         display:flex;
         justify-content: center;
         position:relative;
         top: 50%;
+        @include media(sm){
+            top:340px;
+            flex-direction: column;
+            position: relative;
+        }
 
     }    
 
     @include media(sm){
-        height: 375px;
+        height: 700px;
+        background-size:576px 375px;
+        background-position: top;
+        background-color: rgba(map-get($colors, bg-mobile),0.4);
+        
+        .mobile-titles{
+           
+                &-1{
+                    @include mobile-titles;
+                    top:169px;
+                    align-items: flex-start;
+                    padding-left:10%;
+                    p{font-weight:400;}
+                   
+                
+                }
+                &-2{
+                    @include mobile-titles;
+                    top:300px;
+                    p{color:black;
+                    font-weight: 500;}
+                }
+        }
+
+
+
+
+
+
+
     }
 }
 

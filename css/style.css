@@ -458,6 +458,18 @@ footer .ft-cr p {
 .btn-apuntes:hover {
   background-color: #9ae3e3;
 }
+@media screen and (max-width: 576px) {
+  .btn {
+    width: 90%;
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .btn-cursos {
+    margin-bottom: 9px;
+  }
+}
 
 .carousel-indicators {
   display: -webkit-box;
@@ -831,6 +843,9 @@ main {
   background-position: center;
   overflow: hidden;
 }
+main .mobile-titles-1, main .mobile-titles-2 {
+  display: none;
+}
 main .botones {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,8 +857,88 @@ main .botones {
   top: 50%;
 }
 @media screen and (max-width: 576px) {
+  main .botones {
+    top: 340px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+}
+@media screen and (max-width: 576px) {
   main {
-    height: 375px;
+    height: 700px;
+    background-size: 576px 375px;
+    background-position: top;
+    background-color: rgba(229, 229, 229, 0.4);
+  }
+  main .mobile-titles-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    font-family: "Roboto Slab";
+    top: 169px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 10%;
+  }
+  main .mobile-titles-1 h2 {
+    color: #FEC92E;
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+  main .mobile-titles-1 h2 span {
+    color: #FFFFFF;
+    font-size: 1em;
+  }
+  main .mobile-titles-1 p {
+    color: #FFFFFF;
+    font-size: 1.5em;
+  }
+  main .mobile-titles-1 p {
+    font-weight: 400;
+  }
+  main .mobile-titles-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    font-family: "Roboto Slab";
+    top: 300px;
+  }
+  main .mobile-titles-2 h2 {
+    color: #FEC92E;
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+  main .mobile-titles-2 h2 span {
+    color: #FFFFFF;
+    font-size: 1em;
+  }
+  main .mobile-titles-2 p {
+    color: #FFFFFF;
+    font-size: 1.5em;
+  }
+  main .mobile-titles-2 p {
+    color: black;
+    font-weight: 500;
   }
 }
 
