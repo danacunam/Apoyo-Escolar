@@ -13,6 +13,10 @@
 
     height: 200px;
 }
+.carousel-indicators{
+
+    z-index:0;
+}
 
 .carousel-caption{
    
@@ -40,5 +44,9 @@
   
     
 }
-
+.carousel{
+@include media (sm){
+display:none;
+}
+}
 

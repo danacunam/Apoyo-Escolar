@@ -21,15 +21,30 @@
         </div>
         <div class="nav-container">
             <nav id="navBar" class="navigation-bar">
-                <ul>
+                <ul class="navlist">
                     <li><a class="nav-link nav-link-1" href="#us">NOSOTROS</a ></li>
                     <li ><a class="nav-link nav-link-2" href="pages/cursos.html">CURSOS</a ></li>
                     <li><a class="nav-link nav-link-3" href="#class">CLASES</a ></li>
                     <li><a class="nav-link nav-link-4" href="#notes">APUNTES</a ></li>
                     <li><a class="nav-link nav-link-5" href="#contact">CONTACTO</a></li>
                 </ul>
-            </nav>
+               <div class="btn-movil btn-movil-o-active" onclick="openNav()" id="open-btn">
+                   <img src="images/mobile-menu-btn.png" alt="boton de menu movil">
+                </div>
+                <div class="btn-movil btn-movil-c" onclick="closeNav()" id="close-btn">
+                    <img src="images/mobile-close-btn.png" alt="boton de menu movil">
+                 </div>  
+            </nav>           
         </div>
+        <nav class="mobile-nav" id="navMovil">
+            <ul>
+                <li><a class="nav-link nav-link-1" href="#us">NOSOTROS</a ></li>
+                <li ><a class="nav-link nav-link-2" href="pages/cursos.html">CURSOS</a ></li>
+                <li><a class="nav-link nav-link-3" href="#class">CLASES</a ></li>
+                <li><a class="nav-link nav-link-4" href="#notes">APUNTES</a ></li>
+                <li><a class="nav-link nav-link-5" href="#contact">CONTACTO</a></li>
+            </ul>
+        </nav>
     </header>
     
 <main id="main">

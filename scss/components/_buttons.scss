@@ -79,6 +79,10 @@
     right:21px;
     border: none;
     z-index:1;
+
+        @include media(sm){
+            top:360px;
+        }
             a{
                 display:flex;
                 align-items: center ;

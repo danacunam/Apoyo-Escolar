@@ -33,3 +33,21 @@
         
     }
 }
+
+@mixin media($media) {
+  @if $media==sm {
+    @media screen and (max-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+  @else if $media==md {
+    @media (min-width: $breakpoint-sm + 1) and (max-width: $breakpoint-lg - 1) {
+      @content;
+    }
+  }
+  @else if $media==lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}

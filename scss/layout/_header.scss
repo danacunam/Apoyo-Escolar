@@ -4,6 +4,7 @@ header {
   height: 119px;
   position: fixed;
   z-index: 1;
+ 
 
   .logo {
     width: 25vw;
@@ -16,12 +17,22 @@ header {
   }
   .nav-container {
     width: 75vw;
+   
+   
     .navigation-bar {
       width: 66%;
       display: flex;
       justify-content: center;
+      .btn-movil{       
+        width:30px;
+        height:30px;
 
-      ul {
+        &-o-active,&-c{
+          display:none;
+        }
+      }
+
+      .navlist {
         display: flex;
         justify-content: space-around;
         font-family: map-get($fonts, Roboto-condensed);
@@ -68,6 +79,106 @@ header {
       }
     }
   }
+
+  @include media(sm){
+
+    height:65px;
+    background-color: black;
+      .logo{
+       
+        img{
+          width:33px;
+          left:45px;
+        }
+      }
+      .nav-container{
+        
+          .navigation-bar{
+            width:100%;
+            justify-content: flex-end;
+            padding-right:45px;
+            .navlist{
+              display:none; 
+            }
+            .btn-movil{
+              display:flex;
+              align-items: center;
+              &-c{
+                display:none; 
+                
+               
+                &-active{
+                display:flex;
+                animation: btn-rotate 0.4s linear forwards;
+                }
+              }
+              &-o{
+                display:none;
+                &-active{
+                  display:flex;
+                  animation: btn-o-rotate 0.4s linear forwards;
+                }
+              }
+            }      
+        }
+      
+          
+      
+      
+      }
+   
+      .mobile-nav{
+
+        &-inactive{
+           @extend .mobile-nav-active;
+          animation: recoge 0.4s linear forwards!important;
+          
+          }
+       
+        &-active{
+        display:flex;
+        position:absolute;
+        top:64px;
+        z-index:2;
+          
+        justify-content: center;
+        align-items:flex-end;        
+        background-color:black;       
+        width:100vw;
+        padding:0;
+        animation: deploy 0.4s linear forwards;
+
+          ul{
+            padding-bottom:50px;
+            padding-left:0;
+            text-align: center;
+            width:80%;
+           li{
+            border-top: 0.5px solid white;
+            border-bottom:0.5px solid white;
+            &:first-child {
+              border-top:none;
+            }
+            .nav-link {        
+            height:71px;
+            color: map-get($colors, lighter-gray);
+            font-size: 1.65em;
+            font-family:map-get($fonts, Roboto-condensed);
+            padding:0;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+      }
+      
+          }
+        }
+
+      }
+
+  }
+
+
 }
 
 .header-fixed {
@@ -98,6 +209,49 @@ header {
   }
   100% {
     background-color: none;
-    // padding-top: 40px;
+   
   }
+}
+
+@keyframes deploy{
+  0% {height:0;
+  opacity:0;}
+  100%{height:568px;
+  opacity:1;}
+}
+@keyframes recoge{
+  0% {height:568px;
+  opacity:1;}
+  100%{height:0px;
+  opacity:0;}
+}
+@keyframes btn-rotate{
+  0% {transform:(rotate(0deg));
+      opacity: 0;
+  }
+  25% {transform:(rotate(90deg));
+      opacity:0.25;}
+  50% {transform:(rotate(180deg));
+      opacity:0.7;}
+  75% {transform:(rotate(270deg));
+  opacity: 1;}
+  100% {transform:(rotate(360deg));
+
+}
+}
+
+
+@keyframes btn-o-rotate{
+  0% {transform:(rotate(0deg));
+      opacity: 0;
+  }
+  25% {transform:(rotate(270deg));
+      opacity:0.5;}
+  50% {transform:(rotate(180deg));
+      opacity:0.7;}
+  75% {transform:(rotate(90deg));
+  opacity: 1;}
+  100% {transform:(rotate(0deg));
+
+}
 }
