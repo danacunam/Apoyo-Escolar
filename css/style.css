@@ -338,11 +338,6 @@ footer .ft-cr p {
   border: none;
   z-index: 1;
 }
-@media screen and (max-width: 576px) {
-  .wa-button {
-    top: 360px;
-  }
-}
 .wa-button a {
   display: flex;
   align-items: center;
@@ -358,10 +353,85 @@ footer .ft-cr p {
 .wa-button a p {
   margin: 0;
 }
+@media screen and (max-width: 576px) {
+  .wa-button {
+    top: 360px;
+  }
+  .wa-button-a {
+    width: 195px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #23ca62;
+    position: fixed;
+    bottom: 28px;
+    right: 21px;
+    border: none;
+    z-index: 1;
+    animation: wa 0.4s linear forwards;
+  }
+  .wa-button-a a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    padding: 0 6px;
+  }
+  .wa-button-a a:hover {
+    color: #f2f2f2;
+  }
+  .wa-button-a a p {
+    margin: 0;
+  }
+}
+.wa-button-b {
+  width: 195px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #23ca62;
+  position: fixed;
+  bottom: 28px;
+  right: 21px;
+  border: none;
+  z-index: 1;
+  animation: wa-2 0.4s ease-in forwards;
+}
+.wa-button-b a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Roboto";
+  font-weight: bold;
+  padding: 0 6px;
+}
+.wa-button-b a:hover {
+  color: #f2f2f2;
+}
+.wa-button-b a p {
+  margin: 0;
+}
 .wa-button:hover {
   background-color: #2dda6e;
 }
 
+@keyframes wa {
+  0% {
+    top: 360px;
+  }
+  100% {
+    top: 650px;
+  }
+}
+@keyframes wa-2 {
+  0% {
+    top: 650;
+  }
+  100% {
+    top: 360;
+  }
+}
 .review-box {
   width: 220px;
   height: 220px;

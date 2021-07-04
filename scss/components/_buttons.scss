@@ -70,40 +70,40 @@
 //BOTON WHATSAPP
 
 .wa-button{
-    width: 195px;
-    height:48px;
-    border-radius: 8px;
-    background-color:darken(map-get($colors,green-w ),2%);
-    position:fixed;
-    bottom:28px;
-    right:21px;
-    border: none;
-    z-index:1;
+  @include whatsapp;
 
         @include media(sm){
             top:360px;
+            
+            &-a{
+                @include whatsapp;
+                animation: wa 0.4s linear forwards;
+                
+            }
         }
-            a{
-                display:flex;
-                align-items: center ;
-                justify-content: space-evenly;
-                color:white;
-                font-family: map-get($fonts, Roboto );
-                font-weight:bold; 
-                padding:0 6px;
-                &:hover{
-                    color: darken(white,5%);
-                }
-                    p{margin:0;}
-     
-                } 
+            &-b{
+                @include whatsapp;
+                animation: wa-2 0.4s ease-in forwards; 
+            }
        
        
         &:hover{
          
             background-color:lighten(map-get($colors,green-w ),3%);
         }
+
         
 }
+
+@keyframes wa{
+    0%{ top:360px};
+    100%{top:650px};
+}
+@keyframes wa-2{
+    0%{ top:650};
+    100%{top:360};
+}
+
+
 
 

@@ -129,9 +129,10 @@ header {
    
       .mobile-nav{
 
-        &-inactive{
-           @extend .mobile-nav-active;
-          animation: recoge 0.4s linear forwards!important;
+        &-inactive {
+            
+          @extend .mobile-nav-active;
+          animation: recoge 0.4s linear forwards !important;
           
           }
        
@@ -140,7 +141,6 @@ header {
         position:absolute;
         top:64px;
         z-index:2;
-          
         justify-content: center;
         align-items:flex-end;        
         background-color:black;       

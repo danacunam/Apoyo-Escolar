@@ -36,13 +36,13 @@
                  </div>  
             </nav>           
         </div>
-        <nav class="mobile-nav" id="navMovil">
+        <nav class="" id="navMovil">
             <ul>
-                <li><a class="nav-link nav-link-1" href="#us">NOSOTROS</a ></li>
+                <li><a class="nav-link nav-link-1" onclick="closeNav()" href="#us">NOSOTROS</a ></li>
                 <li ><a class="nav-link nav-link-2" href="pages/cursos.html">CURSOS</a ></li>
-                <li><a class="nav-link nav-link-3" href="#class">CLASES</a ></li>
-                <li><a class="nav-link nav-link-4" href="#notes">APUNTES</a ></li>
-                <li><a class="nav-link nav-link-5" href="#contact">CONTACTO</a></li>
+                <li><a class="nav-link nav-link-3" onclick="closeNav()" href="#class">CLASES</a ></li>
+                <li><a class="nav-link nav-link-4" onclick="closeNav()" href="#notes">APUNTES</a ></li>
+                <li><a class="nav-link nav-link-5" onclick="closeNav()" href="#contact">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -88,7 +88,7 @@
         <a href="#notes">APUNTES GRATUITOS</a>
     </button>
   </div>
-  <button class="wa-button" data-aos="fade" data-aos-offset="-200">
+  <button class="wa-button" data-aos="fade" data-aos-offset="-200" id="wa-btn">
     <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" >
         <img src="images/wa-white.png" alt="icono de WhatsApp">
         <p>¿Dudas? ¡Escribinos!</p>
