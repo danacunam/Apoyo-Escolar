@@ -5,6 +5,9 @@ main{
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    .bg-main-mobile{
+        display:none;
+    }
     .mobile-titles{
         &-1,&-2{display:none;}
     }
@@ -22,7 +25,7 @@ main{
     }    
 
     @include media(sm){
-        height: 700px;
+        height: 730px;
         background-size:576px 375px;
         background-position: top;
         background-color: rgba(map-get($colors, bg-mobile),0.4);
@@ -44,6 +47,11 @@ main{
                     p{color:black;
                     font-weight: 500;}
                 }
+        }
+        .bg-main-mobile{
+            display:block;
+            position:absolute;
+            top:390px;
         }
 
 

@@ -9,11 +9,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height:100vh;
-    
+   
+    .bg-us-mobile{
+        display:none;
+    }
+    .review-mobile{display:none;}
 .nosotros-top{
      width:70%;
      align-self: center;
+     margin-bottom: 30px;
     
     &-title{
         color: map-get($colors,orange-1);
@@ -37,5 +41,57 @@
      justify-content: space-around;
      padding: 60px 10%;
      
+    }
+
+    @include media(sm){
+        padding-top:0;
+        background-image:none;
+        background-color: rgba(map-get($colors, bg-mobile),0.4);
+        justify-content: flex-start;
+        .bg-us-mobile{
+            display:block;
+            position:absolute;
+            top:750px;
+            z-index:0;
+        }
+        .nosotros-top{
+            width:85%;
+            align-self: center;
+            &-title{
+                font-size:2.9em;
+                margin-bottom:20px;
+            }
+            &-info{
+                font-size:1.2em;  
+             }
+        }
+        .reviews-title{
+            color:map-get($colors, white );
+            font-family: map-get($fonts, font-2 );
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+            position:relative;
+            top:50px;
+            h2{
+                font-size:1.3em;
+            }
+        }
+
+        .review { display:none;}
+        .review-mobile{
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height:380px;
+            background-color: rgba(map-get($colors, orange-1 ),1);
+
+
+        }
+
+
+
     }
 }

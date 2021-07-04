@@ -647,6 +647,15 @@ footer .ft-cr p {
   border: 2px solid #3F4650;
 }
 
+.review-mobile-box {
+  height: 200px;
+  width: 80%;
+  background-color: #FD982D;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 70px 0px #00000026;
+          box-shadow: 0px 0px 70px 0px #00000026;
+}
+
 .cursos-box, .cursos-box-6, .cursos-box-5, .cursos-box-4, .cursos-box-3, .cursos-box-2, .cursos-box-1 {
   width: 238px;
   height: 198px;
@@ -843,6 +852,9 @@ main {
   background-position: center;
   overflow: hidden;
 }
+main .bg-main-mobile {
+  display: none;
+}
 main .mobile-titles-1, main .mobile-titles-2 {
   display: none;
 }
@@ -868,7 +880,7 @@ main .botones {
 }
 @media screen and (max-width: 576px) {
   main {
-    height: 700px;
+    height: 730px;
     background-size: 576px 375px;
     background-position: top;
     background-color: rgba(229, 229, 229, 0.4);
@@ -940,6 +952,11 @@ main .botones {
     color: black;
     font-weight: 500;
   }
+  main .bg-main-mobile {
+    display: block;
+    position: absolute;
+    top: 390px;
+  }
 }
 
 .nosotros {
@@ -958,13 +975,19 @@ main .botones {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 100vh;
+}
+.nosotros .bg-us-mobile {
+  display: none;
+}
+.nosotros .review-mobile {
+  display: none;
 }
 .nosotros .nosotros-top {
   width: 70%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-bottom: 30px;
 }
 .nosotros .nosotros-top-title {
   color: #FD982D;
@@ -996,6 +1019,68 @@ main .botones {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 60px 10%;
+}
+@media screen and (max-width: 576px) {
+  .nosotros {
+    padding-top: 0;
+    background-image: none;
+    background-color: rgba(229, 229, 229, 0.4);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .nosotros .bg-us-mobile {
+    display: block;
+    position: absolute;
+    top: 750px;
+    z-index: 0;
+  }
+  .nosotros .nosotros-top {
+    width: 85%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .nosotros .nosotros-top-title {
+    font-size: 2.9em;
+    margin-bottom: 20px;
+  }
+  .nosotros .nosotros-top-info {
+    font-size: 1.2em;
+  }
+  .nosotros .reviews-title {
+    color: #FFFFFF;
+    font-family: "Roboto Slab";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+    position: relative;
+    top: 50px;
+  }
+  .nosotros .reviews-title h2 {
+    font-size: 1.3em;
+  }
+  .nosotros .review {
+    display: none;
+  }
+  .nosotros .review-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 380px;
+    background-color: #fd982d;
+  }
 }
 
 #cursos {
