@@ -46,13 +46,14 @@
     @include media(sm){
         padding-top:0;
         background-image:none;
-        background-color: rgba(map-get($colors, bg-mobile),0.4);
+        background-color: $bc-mobile;
         justify-content: flex-start;
         .bg-us-mobile{
             display:block;
             position:absolute;
             top:750px;
             z-index:0;
+            max-width:100%;
         }
         .nosotros-top{
             width:85%;

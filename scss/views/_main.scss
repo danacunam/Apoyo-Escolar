@@ -28,7 +28,7 @@ main{
         height: 730px;
         background-size:576px 375px;
         background-position: top;
-        background-color: rgba(map-get($colors, bg-mobile),0.4);
+        background-color: $bc-mobile;
         
         .mobile-titles{
            

@@ -165,6 +165,7 @@ header .nav-container .navigation-bar .navlist .nav-link-5:hover, header .nav-co
   header .mobile-nav-active ul, header .mobile-nav-inactive ul {
     padding-bottom: 50px;
     padding-left: 0;
+    padding-right: 0;
     text-align: center;
     width: 80%;
   }
@@ -391,13 +392,22 @@ footer {
 }
 footer .footer-info {
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 28px;
 }
 footer .footer-info p {
   font-family: "Roboto";
   font-size: 0.7em;
   margin: 0;
   color: #3F4650;
-  padding-left: 28px;
+}
+footer .footer-info p span {
+  font-size: 1em;
 }
 footer .footer-info p strong {
   font-size: 1em;
@@ -417,6 +427,41 @@ footer .ft-cr p {
   margin: 0;
   color: #3F4650;
   padding-right: 28px;
+}
+@media screen and (max-width: 576px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 11px 0;
+  }
+  footer .ft-cr {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #3F4650;
+  }
+  footer .ft-cr p {
+    color: white;
+    padding: 7px 0;
+    font-size: 7px;
+  }
 }
 
 .btn {
@@ -1034,6 +1079,7 @@ main .botones {
     position: absolute;
     top: 750px;
     z-index: 0;
+    max-width: 100%;
   }
   .nosotros .nosotros-top {
     width: 85%;
@@ -1282,6 +1328,33 @@ main .botones {
 .clases .p-type-b .class-info strong {
   font-size: 1em;
 }
+@media screen and (max-width: 576px) {
+  .clases {
+    min-height: auto;
+    max-width: 100%;
+    padding-top: 60px;
+    background-color: rgba(229, 229, 229, 0.4);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .clases-title {
+    font-size: 2.9em;
+  }
+  .clases .inner-clases {
+    width: 85%;
+  }
+}
 
 .apuntes {
   max-width: 70%;
@@ -1335,7 +1408,7 @@ main .botones {
 .apuntes .apuntes-all .lista-apuntes ul img {
   margin: 0 7px;
 }
-.apuntes .apuntes-all .lista-apuntes ul a {
+.apuntes .apuntes-all .lista-apuntes ul .ap-dl {
   font-size: 1.3em;
   font-family: "Roboto";
   color: #3F4650;
@@ -1343,8 +1416,50 @@ main .botones {
   line-height: 1.3em;
   font-size: 1em;
 }
-.apuntes .apuntes-all .lista-apuntes ul a:hover {
+.apuntes .apuntes-all .lista-apuntes ul .ap-dl:hover {
   opacity: 0.7;
+}
+@media screen and (max-width: 576px) {
+  .apuntes {
+    background-color: rgba(229, 229, 229, 0.4);
+    min-width: 100%;
+    padding-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: auto;
+  }
+  .apuntes .apuntes-title {
+    font-size: 2.9em;
+  }
+  .apuntes .inner-apuntes {
+    width: 85%;
+  }
+  .apuntes .apuntes-all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .apuntes .apuntes-all .box-apuntes-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .apuntes .ap-dl {
+    font-size: 20px !important;
+  }
+  .apuntes .apunte-item {
+    font-size: 20px !important;
+  }
 }
 
 .contacto {
@@ -1381,6 +1496,12 @@ main .botones {
 }
 .contacto .map-footer {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacto .map-footer-text {
+  width: 50%;
 }
 .contacto .map-footer-text p {
   font-size: 1.3em;
@@ -1389,6 +1510,15 @@ main .botones {
   font-weight: 400;
   line-height: 1.3em;
   font-size: 1em;
+}
+.contacto .redes-icons {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .contacto .link-rs .rs-icon-c {
   display: none;
@@ -1402,4 +1532,56 @@ main .botones {
 .contacto .rs-icon, .contacto .rs-icon-c {
   margin: 0 2.5px;
   width: 30px;
+}
+@media screen and (max-width: 576px) {
+  .contacto {
+    background-color: rgba(229, 229, 229, 0.4);
+    max-width: 100%;
+    min-height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
+    padding-bottom: 140px;
+  }
+  .contacto .inner-contacto {
+    width: 85%;
+  }
+  .contacto .contacto-title {
+    font-size: 2.9em;
+  }
+  .contacto .mapa {
+    height: 210px;
+    margin-top: 20px;
+  }
+  .contacto .map-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacto .map-footer-text {
+    width: 100%;
+    text-align: center;
+  }
+  .contacto .redes-icons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }

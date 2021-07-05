@@ -40,7 +40,7 @@
                 img{
                     margin: 0 7px;
                 }
-                a{
+                .ap-dl{
                     @include txt-content;
                     font-size: 1em;
                     &:hover{
@@ -53,6 +53,38 @@
     }
    
 
+
+}
+
+@include media(sm){
+    background-color: $bc-mobile;
+    min-width:100%;
+    padding-top:60px;
+    display:flex;
+    justify-content: center;
+    min-height:auto;
+    .apuntes-title{
+      
+        font-size: 2.9em;
+        
+    } 
+    .inner-apuntes{
+        width:85%;
+    }
+    .apuntes-all{
+        flex-direction: column;
+        .box-apuntes-container{
+            display:flex;
+            justify-content: center;
+            width:100%;
+            margin-bottom:20px;
+        }
+    }
+    .ap-dl{font-size:20px !important;}
+    .apunte-item{
+        font-size:20px!important;
+    }
+    
 
 }
 

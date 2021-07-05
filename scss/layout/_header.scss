@@ -128,7 +128,7 @@ header {
       }
    
       .mobile-nav{
-
+       
         &-inactive {
             
           @extend .mobile-nav-active;
@@ -151,6 +151,7 @@ header {
           ul{
             padding-bottom:50px;
             padding-left:0;
+            padding-right:0;
             text-align: center;
             width:80%;
            li{

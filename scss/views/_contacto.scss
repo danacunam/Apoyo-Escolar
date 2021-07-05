@@ -26,25 +26,36 @@
     }
     .map-footer{
         margin-top:20px;
-        &-text p{
-            @include txt-content;
-            font-size: 1em;
-        }
-    }
-    .link-rs{
-        .rs-icon-c{
-            display:none;
-        }
-        &:hover{
-            .rs-icon{
-                display:none;
-            }
-            .rs-icon-c{
-                display:block;
+        display:flex;
 
-            }
-        }
+        &-text
+        {width:50%;
+                p{
+                    @include txt-content;
+                    font-size: 1em;
+                }}
     }
+
+    .redes-icons{
+        width:50%;
+        display:flex;
+        justify-content: flex-end;
+    }
+
+            .link-rs{
+                .rs-icon-c{
+                    display:none;
+                }
+                &:hover{
+                    .rs-icon{
+                        display:none;
+                    }
+                    .rs-icon-c{
+                        display:block;
+
+                    }
+                }
+            }
 
     .rs-icon{
         margin: 0 2.5px;
@@ -54,4 +65,40 @@
         }        
     }
 
+    @include media(sm){
+        background-color: $bc-mobile;
+        max-width:100%;
+        min-height:auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:60px;
+        padding-bottom:140px;
+
+        .inner-contacto{
+            width:85%;
+        }
+        .contacto-title{
+            font-size:2.9em;
+        }
+        .mapa{
+            height:210px;
+            margin-top:20px;
+        }
+        .map-footer{
+            flex-direction: column;
+            margin-top:60px;
+            align-items: center;
+            &-text{
+                width:100%;
+               text-align: center;
+            }
+        }
+        .redes-icons{
+            width:100%;
+            display:flex;
+            justify-content: center;
+        }
+       
+    }
 }

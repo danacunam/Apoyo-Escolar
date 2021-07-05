@@ -6,11 +6,16 @@ footer{
 
     .footer-info{
         width:70%;
-
+        display:flex;
+        justify-content: flex-start;
+        padding-left:28px;
+       
         p{
             @include txt-footer;
-            padding-left:28px;
-           
+       
+            span{
+                font-size:1em;
+            }
             strong{
                 font-size: 1em;
             }
@@ -26,5 +31,30 @@ footer{
          padding-right: 28px;
         }
 
+    }
+
+    @include media(sm){
+        flex-direction:column;
+        
+        .footer-info{
+            flex-direction:column;
+            padding:0;
+            align-items: center;
+            width:100%;
+            padding:11px 0  ;
+            
+        }
+        .ft-cr{
+            width:100%;
+            justify-content: center;
+            align-items: center ;
+          
+            background-color: map-get($colors, dark-gray );
+            
+            p{color:white;
+            padding:7px 0;
+        font-size:7px;}
+           
+        }
     }
 }

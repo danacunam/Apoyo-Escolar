@@ -118,8 +118,9 @@
 
 <section id="us" class="container-fluid nosotros">
 
-    <img src="images/bg-us-mobile.png" alt="fondo de pagina mobile" class="img-fluid bg-us-mobile">
-
+    <div class="d-flex justify-content-center">
+    <img src="images/bg-us-mobile.png" alt="fondo de pagina mobile" class="bg-us-mobile">
+</div>
     <div class="nosotros-top" >
       
 
@@ -172,7 +173,8 @@
 <!-- CLASES-->
 
 <section id="class" class="clases container">
-     
+  
+    <div class="inner-clases">
     <div data-aos="fade"> 
         <h2 class="clases-title">Clases</h2>
     </div>
@@ -216,7 +218,7 @@
         </p>
     </div>
 
-    
+</div>  
    
 
 </section>
@@ -226,55 +228,56 @@
 
 <section id="notes" class="apuntes container">
 
-    <h2 class="apuntes-title" data-aos="fade" data-aos-offset="100">Apuntes</h2>
-    <p class="apuntes-info" data-aos="fade" data-aos-duration="200">
-        Apuntes disponibles para descargar. Para los apuntes de la
-        versión paga podrás hacer click directamente en el link que 
-        elijas y te llevará a WhatsApp para proceder con el pago y 
-        obtención del mismo.
-    </p>
+    <div class="inner-apuntes">
+            <h2 class="apuntes-title" data-aos="fade" data-aos-offset="100">Apuntes</h2>
+            <p class="apuntes-info" data-aos="fade" data-aos-duration="200">
+                Apuntes disponibles para descargar. Para los apuntes de la
+                versión paga podrás hacer click directamente en el link que 
+                elijas y te llevará a WhatsApp para proceder con el pago y 
+                obtención del mismo.
+            </p>
 
-    <div class="apuntes-all">
-      
-        
-        <div class="box-apuntes-container" data-aos="zoom-in" data-aos-duration="300">        
-            <div class="box-apuntes">     
-                <h4>GRATUITOS</h4>
+            <div class="apuntes-all">
+            
+                
+                <div class="box-apuntes-container" data-aos="zoom-in" data-aos-duration="300">        
+                    <div class="box-apuntes">     
+                        <h4>GRATUITOS</h4>
+                    </div>
+                </div>
+
+                <div class="lista-apuntes" data-aos="fade" data-aos-duration="300">
+                    <ul>
+                        <li><a  class="ap-dl" download href="download/propiedades-algebraicas.pdf">Propiedades algebraicas<img src="images/dl.png" alt=""></a></li>
+                        <li><a class="ap-dl" download href="download/biofisica.pdf">Cinemática<img src="images/dl.png" alt=""></a></li>
+                        <li><a  class="ap-dl" download href="download/dinamica.pdf">Dinámica<img src="images/dl.png" alt=""></a></li>
+                        <li><a  class="ap-dl" download href="download/derivadas.pdf">Derivadas<img src="images/dl.png" alt=""></a></li>
+                        <li><a  class="ap-dl" download href="download/funciones.pdf">Funciones<img src="images/dl.png" alt=""></a></li>
+                    </ul>
+                </div>
+
             </div>
-        </div>
 
-        <div class="lista-apuntes" data-aos="fade" data-aos-duration="300">
-            <ul>
-                <li><a download href="download/propiedades-algebraicas.pdf">Propiedades algebraicas<img src="images/dl.png" alt=""></a></li>
-                <li><a download href="download/biofisica.pdf">Cinemática<img src="images/dl.png" alt=""></a></li>
-                <li><a download href="download/dinamica.pdf">Dinámica<img src="images/dl.png" alt=""></a></li>
-                <li><a download href="download/derivadas.pdf">Derivadas<img src="images/dl.png" alt=""></a></li>
-                <li><a download href="download/funciones.pdf">Funciones<img src="images/dl.png" alt=""></a></li>
-            </ul>
-        </div>
+            <div class="apuntes-all">
+            
+                
+                <div class="box-apuntes-container" data-aos="zoom-in" data-aos-duration="400">        
+                    <div class="box-apuntes">     
+                        <h4>DE PAGO</h4>
+                    </div>
+                </div>
 
-    </div>
+                <div class="lista-apuntes" data-aos="fade" data-aos-duration="400">
+                    <ul>
+                        <li class="apunte-item">Compilado de finales <strong>matemática51 CBC</strong> ($300)</li>
+                        <li class="apunte-item">Compilado de finales <strong>biofísica CBC</strong> ($300)</li>
+                        <li class="apunte-item">Compilado de finales <strong>química CBC</strong> ($300)</li>
+                    </ul>
+                </div>
 
-    <div class="apuntes-all">
-      
-        
-        <div class="box-apuntes-container" data-aos="zoom-in" data-aos-duration="400">        
-            <div class="box-apuntes">     
-                <h4>DE PAGO</h4>
             </div>
+
         </div>
-
-        <div class="lista-apuntes" data-aos="fade" data-aos-duration="400">
-            <ul>
-                <li class="apunte-item">Compilado de finales <strong>matemática51 CBC</strong> ($300)</li>
-                <li class="apunte-item">Compilado de finales <strong>biofísica CBC</strong> ($300)</li>
-                <li class="apunte-item">Compilado de finales <strong>química CBC</strong> ($300)</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <!--  -->
 
 </section>
 
@@ -282,17 +285,18 @@
 
 <section id="contact" class="contacto container">
 
+<div class="inner-contacto">
     <h2 class="contacto-title" data-aos="fade" data-aos-duration="200">Contacto</h2>
     
     <div class="mapa" data-aos="fade" data-aos-duration="300">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.949844503435!2d-58.50624304922636!3d-34.655969567675704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9013c07331f%3A0x3dcefb2674fbdc0c!2sMartiniano%20Leguizam%C3%B3n%201875%2C%20C1440DYM%20CABA!5e0!3m2!1ses!2sar!4v1624567147310!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
-    <div class="row map-footer">
-       <div class="col-6 map-footer-text">
+    <div class="map-footer">
+       <div class="map-footer-text">
            <p>Martiniano Leguizamón 1875, Buenos Aires.</p>
        </div>
-       <div class="col-6 d-flex justify-content-end">
+       <div class="redes-icons">
            <a href="#" class="link-rs" target="_blank" rel="noopener noreferrer">
             <img class="rs-icon" src="images/wa.png" alt="icono de whatsapp">
             <img class="rs-icon-c" src="images/wa-color.png" alt="icono de whatsapp a color">
@@ -313,7 +317,7 @@
     </div>
 
 
-
+</div>
 
 </section>
 
@@ -323,8 +327,10 @@
 
     <div class="footer-info">
         <p>
-           <strong>Martiniano Leguizamón 1875, Buenos Aires</strong>  | 
-            WhatsApp <strong>+54 911 4673 1536</strong> | 
+           <strong>Martiniano Leguizamón 1875, Buenos Aires</strong><span> | </span>  
+        </p>
+        <p>
+             WhatsApp <strong>+54 911 4673 1536</strong> | 
             Instagram<strong> @apoyoescolar.rv</strong> |
             Youtube<strong> Apoyo Escolar Rv</strong> | 
             Mail<strong> apoyoescolarrv@gmail.com</strong>

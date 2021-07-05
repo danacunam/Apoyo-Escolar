@@ -18,7 +18,23 @@
         padding-top:15px;
         @include txt-class; 
     }
-  
+
+    @include media(sm){
+        min-height:auto;
+        max-width:100%;
+        padding-top:60px;
+        background-color: $bc-mobile;
+        justify-content: flex-start;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            font-size:2.9em;}
+        .inner-clases{
+        
+        width:85%;
+        }         
+    }
 }
 
 
