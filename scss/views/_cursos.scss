@@ -15,12 +15,29 @@
                 font-family:map-get($fonts, font-2 );
                 margin-bottom:20px;
             } 
+            @include media(sm){
+                flex-direction:column;
+                justify-content: space-between;
+                height: auto;
+                .cursos-title{
+                    font-size:2.8em;
+
+                }
+                .c1-block, .c2-block{
+                    padding-bottom: 30px;
+
+                }
+                
+            
+             
+            }
         }
 
         .cursos-content{
                 
             display:flex;
             flex-direction: column;
+           
            
             
             &-info{
@@ -30,7 +47,14 @@
                 strong{
                     @extend .cursos-content-info;
                     font-weight: bold;
-                    font-size: 1em;
+                    font-size: 1.2em;
+                }
+
+                @include media(sm){
+                    width:95%;
+                    padding:0;
+                    font-size:1em;
+                   
                 }
             
                     }
@@ -41,21 +65,26 @@
                 @include txt-content;
                 margin-top:0;
                 line-height:25px;
+                @include media(sm){
+                    width:95%;
+                    padding:0;
+                    font-size:1em;
+                }
+            
             }
             }
-            .first-block{
-                padding-bottom: 40px;
-                border-bottom:1px dashed black;
-            }
-            .second-block{
+            // .first-block{
+            //     padding-bottom: 40px;
+            //     border-bottom:1px dashed black;
+            // }
+            .first-block,.second-block,.third-block{
                 @include cursos-block;
+                @include media(sm){
+                    padding-bottom:20px;
+                }
             }
             
-            .third-block{
-            
-                @include cursos-block;
-            }
-
+        
        
 
        
@@ -67,6 +96,10 @@
             grid-gap: 38px;
             align-items:center;
             
+            @include media(sm){
+                grid-template-columns: 100%;
+            grid-gap:23px;
+        margin:40px 0;}
         }
     }
       .curso-completo{
@@ -86,6 +119,14 @@
           &-block{
               padding-top:30px;
           }
+
+          @include media(sm)
+          {
+            h3{
+                margin-top:0;
+            }
+
+          }
       }  
 
       .medios{
@@ -104,11 +145,10 @@
              text-align: center;
              border-bottom: 2px solid black;
              padding-bottom:20px;
+           
           }
-          
-
-
-          
+         
+        
           &-logo{
                 display:flex;
                 align-items: center;

@@ -726,6 +726,9 @@ footer .ft-cr p {
   font-weight: 700;
   font-family: "Roboto Condensed";
 }
+.cursos-box .inner-box .inner-list-mobile, .cursos-box-6 .inner-box .inner-list-mobile, .cursos-box-5 .inner-box .inner-list-mobile, .cursos-box-4 .inner-box .inner-list-mobile, .cursos-box-3 .inner-box .inner-list-mobile, .cursos-box-2 .inner-box .inner-list-mobile, .cursos-box-1 .inner-box .inner-list-mobile {
+  display: none;
+}
 .cursos-box .inner-box .inner-list, .cursos-box-6 .inner-box .inner-list, .cursos-box-5 .inner-box .inner-list, .cursos-box-4 .inner-box .inner-list, .cursos-box-3 .inner-box .inner-list, .cursos-box-2 .inner-box .inner-list, .cursos-box-1 .inner-box .inner-list {
   padding-left: 0;
 }
@@ -751,6 +754,30 @@ footer .ft-cr p {
 }
 .cursos-box-6 {
   background-color: #FD5A33;
+}
+@media screen and (max-width: 576px) {
+  .cursos-box, .cursos-box-6, .cursos-box-5, .cursos-box-4, .cursos-box-3, .cursos-box-2, .cursos-box-1 {
+    width: 80vw;
+    height: 120px;
+  }
+  .cursos-box h3, .cursos-box-1 h3, .cursos-box-2 h3, .cursos-box-3 h3, .cursos-box-4 h3, .cursos-box-5 h3, .cursos-box-6 h3 {
+    font-size: 2em;
+  }
+  .cursos-box .inner-list, .cursos-box-1 .inner-list, .cursos-box-2 .inner-list, .cursos-box-3 .inner-list, .cursos-box-4 .inner-list, .cursos-box-5 .inner-list, .cursos-box-6 .inner-list {
+    display: none;
+  }
+  .cursos-box .inner-box, .cursos-box-1 .inner-box, .cursos-box-2 .inner-box, .cursos-box-3 .inner-box, .cursos-box-4 .inner-box, .cursos-box-5 .inner-box, .cursos-box-6 .inner-box {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 5%;
+  }
+  .cursos-box .inner-list-mobile, .cursos-box-1 .inner-list-mobile, .cursos-box-2 .inner-list-mobile, .cursos-box-3 .inner-list-mobile, .cursos-box-4 .inner-list-mobile, .cursos-box-5 .inner-list-mobile, .cursos-box-6 .inner-list-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 90%;
+    margin: 0;
+  }
 }
 
 .consultas-box {
@@ -786,6 +813,11 @@ footer .ft-cr p {
   font-size: 1em;
   font-weight: 700;
 }
+@media screen and (max-width: 576px) {
+  .consultas-box-text {
+    font-size: 1.2em;
+  }
+}
 
 .precios-box {
   width: 100%;
@@ -819,6 +851,12 @@ footer .ft-cr p {
 .precios-box .precios-title span {
   font-weight: 300;
   font-size: 1.3em;
+}
+@media screen and (max-width: 576px) {
+  .precios-box .precios-title {
+    width: 95%;
+    font-size: 1em;
+  }
 }
 
 .box-apuntes {
@@ -1148,6 +1186,24 @@ main .botones {
   font-family: "Roboto Slab";
   margin-bottom: 20px;
 }
+@media screen and (max-width: 576px) {
+  #cursos .cursos-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: auto;
+  }
+  #cursos .cursos-top .cursos-title {
+    font-size: 2.8em;
+  }
+  #cursos .cursos-top .c1-block, #cursos .cursos-top .c2-block {
+    padding-bottom: 30px;
+  }
+}
 #cursos .cursos-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1168,7 +1224,14 @@ main .botones {
 }
 #cursos .cursos-content-info strong {
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 576px) {
+  #cursos .cursos-content-info, #cursos .cursos-content-info strong {
+    width: 95%;
+    padding: 0;
+    font-size: 1em;
+  }
 }
 #cursos .cursos-content .cursos-list {
   list-style-type: disc;
@@ -1182,23 +1245,24 @@ main .botones {
   margin-top: 0;
   line-height: 25px;
 }
-#cursos .cursos-content .first-block {
-  padding-bottom: 40px;
-  border-bottom: 1px dashed black;
+@media screen and (max-width: 576px) {
+  #cursos .cursos-content .cursos-list-item {
+    width: 95%;
+    padding: 0;
+    font-size: 1em;
+  }
 }
-#cursos .cursos-content .second-block {
+#cursos .cursos-content .first-block, #cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
   padding: 40px 0;
   border-bottom: 1px dashed black;
 }
-#cursos .cursos-content .second-block .cursos-content-info, #cursos .cursos-content .second-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .second-block strong {
+#cursos .cursos-content .first-block .cursos-content-info, #cursos .cursos-content .first-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .first-block strong, #cursos .cursos-content .second-block .cursos-content-info, #cursos .cursos-content .second-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .second-block strong, #cursos .cursos-content .third-block .cursos-content-info, #cursos .cursos-content .third-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .third-block strong {
   width: 100%;
 }
-#cursos .cursos-content .third-block {
-  padding: 40px 0;
-  border-bottom: 1px dashed black;
-}
-#cursos .cursos-content .third-block .cursos-content-info, #cursos .cursos-content .third-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .third-block strong {
-  width: 100%;
+@media screen and (max-width: 576px) {
+  #cursos .cursos-content .first-block, #cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
+    padding-bottom: 20px;
+  }
 }
 #cursos .cursos-content .cursos-cuadros {
   -ms-grid-row-align: center;
@@ -1212,6 +1276,14 @@ main .botones {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 576px) {
+  #cursos .cursos-content .cursos-cuadros {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    grid-gap: 23px;
+    margin: 40px 0;
+  }
 }
 #cursos .curso-completo h3 {
   margin-top: 40px;
@@ -1227,6 +1299,11 @@ main .botones {
 }
 #cursos .curso-completo-block {
   padding-top: 30px;
+}
+@media screen and (max-width: 576px) {
+  #cursos .curso-completo h3 {
+    margin-top: 0;
+  }
 }
 #cursos .medios {
   display: -webkit-box;

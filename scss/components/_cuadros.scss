@@ -1,151 +1,183 @@
 //REVIEWS
 
-.review-box{
-    width: 220px;
-    height:220px;
-    border-radius: 10px;
-    border: 2px solid  map-get($colors,dark-gray );
+.review-box {
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  border: 2px solid map-get($colors, dark-gray);
 }
 
-.review-mobile-box{
-    height:200px;
-    width:80%;
-    background-color:map-get($colors, orange-1 );
-    position: relative;
-    box-shadow: 0px 0px 70px 0px #00000026;
-
+.review-mobile-box {
+  height: 200px;
+  width: 80%;
+  background-color: map-get($colors, orange-1);
+  position: relative;
+  box-shadow: 0px 0px 70px 0px #00000026;
 }
-
-
 
 //CURSOS
 
-.cursos-box{
-    width: 238px;
-    height:198px;
-    border-radius: 10px;
-    border: 3px solid  map-get($colors,black );
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-   .inner-box{
-       width:70%;
-       height:70%;
-       h3{
-           font-size:1.8em;
-           color:black;
-           font-weight: 700;
-           font-family:map-get($fonts, Roboto-condensed )
-       }
-       
-       .inner-list{
-           padding-left:0;
-       &-item{
-           list-style: none;
-           color:black;
-           padding:0;
-       }
-    }
-       
-   }
+.cursos-box {
+  width: 238px;
+  height: 198px;
+  border-radius: 10px;
+  border: 3px solid map-get($colors, black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &-1 {
-        @extend .cursos-box;
-        background-color: map-get($colors,darker-orange );    
+  .inner-box {
+    width: 70%;
+    height: 70%;
+    h3 {
+      font-size: 1.8em;
+      color: black;
+      font-weight: 700;
+      font-family: map-get($fonts, Roboto-condensed);
     }
-    &-2 {
-        @extend .cursos-box;
-        background-color: map-get($colors,yellow-1 );    
-    }
-    &-3 {
-        @extend .cursos-box;
-        background-color: map-get($colors,orange-1 );    
-    }
-    &-4 {
-        @extend .cursos-box;
-        background-color: map-get($colors,purple-1 );    
-    }
-    &-5 {
-        @extend .cursos-box;
-        background-color: map-get($colors,blue-1 );    
-    }
-    &-6 {
-        @extend .cursos-box;
-        background-color: map-get($colors,darker-orange );    
+    .inner-list-mobile {
+      display: none;
     }
 
+    .inner-list {
+      padding-left: 0;
+      &-item {
+        list-style: none;
+        color: black;
+        padding: 0;
+      }
+    }
+  }
+
+  &-1 {
+    @extend .cursos-box;
+    background-color: map-get($colors, darker-orange);
+  }
+  &-2 {
+    @extend .cursos-box;
+    background-color: map-get($colors, yellow-1);
+  }
+  &-3 {
+    @extend .cursos-box;
+    background-color: map-get($colors, orange-1);
+  }
+  &-4 {
+    @extend .cursos-box;
+    background-color: map-get($colors, purple-1);
+  }
+  &-5 {
+    @extend .cursos-box;
+    background-color: map-get($colors, blue-1);
+  }
+  &-6 {
+    @extend .cursos-box;
+    background-color: map-get($colors, darker-orange);
+  }
+
+  @include media(sm) {
+    width: 80vw;
+    height: 120px;
+    h3 {
+      font-size: 2em;
+    }
+    .inner-list {
+      display: none;
+    }
+    .inner-box {
+      width: 100%;
+      padding-top: 10px;
+      padding-left: 5%;
+    }
+    .inner-list-mobile {
+      display: flex !important;
+      width: 90%;
+      margin: 0;
+    }
+  }
 }
 
 //CONSULTAS
 
-.consultas-box{
-    width:100%;
-    height:70px;
-    border: 2px solid  map-get($colors,black );
-    background-color: map-get($colors, purple-1);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin:35px 0 35px 0;  
-    text-align: center;  
-    color: map-get($colors, dark-gray );
-    line-height: 1.4em;
-  
-    &-text{  font-size: 1.3em;
-            margin-bottom:0;
-            color:white;
-        i{ font-size:1em;
-        font-weight:700;
+.consultas-box {
+  width: 100%;
+  height: 70px;
+  border: 2px solid map-get($colors, black);
+  background-color: map-get($colors, purple-1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 35px 0 35px 0;
+  text-align: center;
+  color: map-get($colors, dark-gray);
+  line-height: 1.4em;
+
+  &-text {
+    font-size: 1.3em;
+    margin-bottom: 0;
+    color: white;
+    i {
+      font-size: 1em;
+      font-weight: 700;
     }
-}
+  }
+  @include media(sm){
+
+      &-text{
+          font-size:1.2em;
+      }
+  }
 }
 
 //PRECIOS
 
-.precios-box{
-    width:100%;
-    height:100px;
-    border: 2px solid  map-get($colors, dark-gray);
-    background-color: map-get($colors, white);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin:10px 0 10px 0;  
-    text-align: center;  
-    color: map-get($colors, dark-gray );
-    line-height: 1.4em;
-    .precios-title{
-        font-weight:700;
-        font-size:1.3em;
-        width:60%;
-        span{
-            font-weight:300;
-            font-size: 1.3em;
-        }
+.precios-box {
+  width: 100%;
+  height: 100px;
+  border: 2px solid map-get($colors, dark-gray);
+  background-color: map-get($colors, white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  color: map-get($colors, dark-gray);
+  line-height: 1.4em;
+  .precios-title {
+    font-weight: 700;
+    font-size: 1.3em;
+    width: 60%;
+    span {
+      font-weight: 300;
+      font-size: 1.3em;
     }
-  
-}
+  }
 
+  @include media (sm){
+      .precios-title{
+          width:95%;
+          font-size:1em;
+      }
+      
+  }
+}
 
 // APUNTES
 
-.box-apuntes{
-    width:90%;
-    height:45px;
-    border: 2px solid black;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h4{
-        margin: 3px 0 0 0;
-        font-size:1.4em;
-        font-family: map-get($fonts, font-3 );
-    }
-   
+.box-apuntes {
+  width: 90%;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    margin: 3px 0 0 0;
+    font-size: 1.4em;
+    font-family: map-get($fonts, font-3);
+  }
 }
