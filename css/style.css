@@ -447,6 +447,9 @@ footer .ft-cr p {
     width: 100%;
     padding: 11px 0;
   }
+  footer .footer-info span {
+    display: none;
+  }
   footer .ft-cr {
     width: 100%;
     -webkit-box-pack: center;
@@ -574,45 +577,6 @@ footer .ft-cr p {
 }
 .wa-button a p {
   margin: 0;
-}
-@media screen and (max-width: 576px) {
-  .wa-button {
-    top: 360px;
-  }
-  .wa-button-a {
-    width: 195px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: #23ca62;
-    position: fixed;
-    bottom: 28px;
-    right: 21px;
-    border: none;
-    z-index: 1;
-    -webkit-animation: wa 0.4s linear forwards;
-            animation: wa 0.4s linear forwards;
-  }
-  .wa-button-a a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    color: white;
-    font-family: "Roboto";
-    font-weight: bold;
-    padding: 0 6px;
-  }
-  .wa-button-a a:hover {
-    color: #f2f2f2;
-  }
-  .wa-button-a a p {
-    margin: 0;
-  }
 }
 .wa-button-b {
   width: 195px;
@@ -966,7 +930,6 @@ main .botones {
     height: 730px;
     background-size: 576px 375px;
     background-position: top;
-    background-color: rgba(229, 229, 229, 0.4);
   }
   main .mobile-titles-1 {
     display: -webkit-box;
@@ -1105,9 +1068,8 @@ main .botones {
 }
 @media screen and (max-width: 576px) {
   .nosotros {
-    padding-top: 0;
+    padding-top: 90px;
     background-image: none;
-    background-color: rgba(229, 229, 229, 0.4);
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1170,6 +1132,11 @@ main .botones {
 #cursos {
   max-width: 70%;
   padding: 100px 0;
+}
+@media screen and (max-width: 576px) {
+  #cursos {
+    max-width: 85%;
+  }
 }
 #cursos .cursos-top {
   height: 400px;
@@ -1339,6 +1306,27 @@ main .botones {
   width: 60%;
   height: 200px;
 }
+@media screen and (max-width: 576px) {
+  #cursos .medios-title {
+    border-bottom: 1px dashed black;
+  }
+  #cursos .medios-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    height: 150px;
+  }
+  #cursos .medios-logo img {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+}
 #cursos .datos-banking {
   width: 100%;
   height: 200px;
@@ -1368,6 +1356,29 @@ main .botones {
   font-family: "Roboto";
   color: #3F4650;
   padding-left: 40px;
+}
+@media screen and (max-width: 576px) {
+  #cursos .datos-banking {
+    height: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 40px 0;
+  }
+}
+#cursos .datos-banking .datos-contenedor {
+  text-align: left;
+}
+#cursos .datos-banking .datos-title {
+  font-size: 0.8em;
+}
+#cursos .datos-banking .cbu {
+  border-left: 1px dashed black;
+}
+#cursos .datos-banking .cbu p {
+  font-size: 0.9em;
+}
+#cursos .datos-banking .cbu p strong {
+  font-size: 1em;
 }
 
 .clases {
@@ -1409,8 +1420,7 @@ main .botones {
   .clases {
     min-height: auto;
     max-width: 100%;
-    padding-top: 60px;
-    background-color: rgba(229, 229, 229, 0.4);
+    padding-top: 90px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1498,9 +1508,8 @@ main .botones {
 }
 @media screen and (max-width: 576px) {
   .apuntes {
-    background-color: rgba(229, 229, 229, 0.4);
     min-width: 100%;
-    padding-top: 60px;
+    padding-top: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1531,11 +1540,8 @@ main .botones {
     width: 100%;
     margin-bottom: 20px;
   }
-  .apuntes .ap-dl {
-    font-size: 20px !important;
-  }
-  .apuntes .apunte-item {
-    font-size: 20px !important;
+  .apuntes .ap-dl, .apuntes .apunte-item {
+    font-size: 18px !important;
   }
 }
 
@@ -1612,9 +1618,8 @@ main .botones {
 }
 @media screen and (max-width: 576px) {
   .contacto {
-    background-color: rgba(229, 229, 229, 0.4);
     max-width: 100%;
-    min-height: auto;
+    min-height: 95vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1625,8 +1630,7 @@ main .botones {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 60px;
-    padding-bottom: 140px;
+    padding-top: 90px;
   }
   .contacto .inner-contacto {
     width: 85%;

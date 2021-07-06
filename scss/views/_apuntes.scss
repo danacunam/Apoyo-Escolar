@@ -57,9 +57,9 @@
 }
 
 @include media(sm){
-    background-color: $bc-mobile;
+   
     min-width:100%;
-    padding-top:60px;
+    padding-top:$pt-sections*0.6;
     display:flex;
     justify-content: center;
     min-height:auto;
@@ -80,10 +80,8 @@
             margin-bottom:20px;
         }
     }
-    .ap-dl{font-size:20px !important;}
-    .apunte-item{
-        font-size:20px!important;
-    }
+    .ap-dl,.apunte-item{font-size:18px !important;}
+   
     
 
 }

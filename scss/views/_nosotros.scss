@@ -44,9 +44,9 @@
     }
 
     @include media(sm){
-        padding-top:0;
+        padding-top:$pt-sections*0.6;
         background-image:none;
-        background-color: $bc-mobile;
+        
         justify-content: flex-start;
         .bg-us-mobile{
             display:block;

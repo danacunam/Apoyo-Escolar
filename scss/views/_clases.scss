@@ -22,8 +22,8 @@
     @include media(sm){
         min-height:auto;
         max-width:100%;
-        padding-top:60px;
-        background-color: $bc-mobile;
+        padding-top:$pt-sections*0.6;
+      
         justify-content: flex-start;
         display:flex;
         flex-direction: column;
