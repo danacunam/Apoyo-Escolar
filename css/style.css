@@ -736,7 +736,7 @@ main .botones {
     position: relative;
     font-family: "Roboto Slab";
     top: 169px;
-    padding: 0 4%;
+    letter-spacing: -1px;
   }
   main .mobile-titles-1 h2 {
     color: #FEC92E;
@@ -761,6 +761,7 @@ main .botones {
     position: relative;
     font-family: "Roboto Slab";
     top: 300px;
+    letter-spacing: -1px;
   }
   main .mobile-titles-2 h2 {
     color: #FEC92E;
@@ -1021,9 +1022,10 @@ div.eapps-widget {
   width: 100%;
 }
 #cursos .medios-title {
+  font-family: "Roboto Condensed";
   color: #3F4650;
   font-weight: 700;
-  font-size: 1.4em;
+  font-size: 1.5em;
   width: 100%;
   text-align: center;
   border-bottom: 2px solid black;

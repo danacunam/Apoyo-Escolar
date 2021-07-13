@@ -35,7 +35,7 @@ main{
                 &-1{
                     @include mobile-titles;
                     top:169px;
-                   padding: 0 4%;
+                   letter-spacing:-1px;
                     
                     p{font-weight:400;}
                    
@@ -44,6 +44,7 @@ main{
                 &-2{
                     @include mobile-titles;
                     top:300px;
+                    letter-spacing:-1px;
                     p{color:black;
                     font-weight: 500;}
                 }
