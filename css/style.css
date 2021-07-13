@@ -404,6 +404,9 @@ footer .ft-cr p {
 .wa-button a p {
   margin: 0;
 }
+.wa-button a .img-wa {
+  width: 22px;
+}
 .wa-button-a {
   width: 195px;
   height: 48px;
@@ -431,6 +434,9 @@ footer .ft-cr p {
 .wa-button-a a p {
   margin: 0;
 }
+.wa-button-a a .img-wa {
+  width: 22px;
+}
 .wa-button-b {
   width: 195px;
   height: 48px;
@@ -457,6 +463,9 @@ footer .ft-cr p {
 }
 .wa-button-b a p {
   margin: 0;
+}
+.wa-button-b a .img-wa {
+  width: 22px;
 }
 .wa-button:hover {
   background-color: #2dda6e;
@@ -727,6 +736,7 @@ main .botones {
     position: relative;
     font-family: "Roboto Slab";
     top: 169px;
+    padding: 0 4%;
   }
   main .mobile-titles-1 h2 {
     color: #FEC92E;

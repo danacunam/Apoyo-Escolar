@@ -45,6 +45,7 @@
   right:21px;
   border: none;
   z-index:1;
+ 
   a{
     display:flex;
     align-items: center ;
@@ -53,12 +54,19 @@
     font-family: map-get($fonts, Roboto );
     font-weight:bold; 
     padding:0 6px;
+    
     &:hover{
         color: darken(white,5%);
     }
         p{margin:0;}
+        .img-wa{
+          width:22px;
+        }
 
     } 
+  
+  
+
 }
 
 @mixin mobile-titles{

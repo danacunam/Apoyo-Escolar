@@ -82,15 +82,12 @@
 .wa-button{
   @include whatsapp;
 
-        // @include media(sm){
-        //     top:360px;
-            
-             &-a{
+               &-a{
                  @include whatsapp;
                  animation: wa 0.4s linear forwards;
                 
                   }
-        // }
+        
             &-b{
                 @include whatsapp;
                 animation: wa-2 0.4s linear forwards; 
