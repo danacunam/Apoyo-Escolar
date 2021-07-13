@@ -13,7 +13,10 @@
      <link rel="icon" href="images/favicon.ico">
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-   
+   <style>
+
+div.eapps-widget{ top:-45px;height:250px; overflow:hidden; z-index:0;}
+   </style>
 
     <title>Apoyo Escolar</title>
 
@@ -33,17 +36,17 @@
                     <li><a class="nav-link nav-link-4" href="#notes">APUNTES</a ></li>
                     <li><a class="nav-link nav-link-5" href="#contact">CONTACTO</a></li>
                 </ul>
-               <div class="btn-movil btn-movil-o-active" onclick="openNav()" id="open-btn">
+               <div class="btn-movil btn-movil-o-active"  id="open-btn">
                    <img src="images/mobile-menu-btn.png" alt="boton de menu movil">
                 </div>
-                <div class="btn-movil btn-movil-c" onclick="closeNav()" id="close-btn">
+                <div class="btn-movil btn-movil-c"  id="close-btn">
                     <img src="images/mobile-close-btn.png" alt="boton de menu movil">
                  </div>  
             </nav>           
         </div>
-        <nav class="" id="navMovil">
+        <nav class="mobile-nav-inactive" id="navMovil">
             <ul>
-                <li><a class="nav-link nav-link-1" onclick="closeNav()" href="#us">NOSOTROS</a ></li>
+                <li><a class="nav-link nav-link-1 " onclick="closeNav()" href="#us">NOSOTROS</a ></li>
                 <li ><a class="nav-link nav-link-2" href="pages/cursos.html">CURSOS</a ></li>
                 <li><a class="nav-link nav-link-3" onclick="closeNav()" href="#class">CLASES</a ></li>
                 <li><a class="nav-link nav-link-4" onclick="closeNav()" href="#notes">APUNTES</a ></li>
@@ -147,30 +150,13 @@
 
     <div class="review">
 
-        <div id="google-reviews"></div>
-
-        <link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/stevenmonson/googleReviews@6e8f0d794393ec657dab69eb1421f3a60add23ef/google-places.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA073IIg9oSBt4r1f6-WtPP96sPPTq2X6g&signed_in=true&libraries=places"></script>
-        
-        <script>
-        jQuery(document).ready(function( $ ) {
-           $("#google-reviews").googlePlaces({
-                placeId: 'ChIJp2QxV_sJVFMR1DEp1x_16F8' //Find placeID @: https://developers.google.com/places/place-id
-              , render: ['reviews']
-              , min_rating: 4
-              , max_rows:3
-              
-           });
-        });
-        </script>
+    
     </div>
 
     <div class="review-mobile">
         <div class="review-mobile-box">
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-fd642204-2627-4c98-8016-918ff44e4e64"></div>
+<div class="elfsight-app-fd642204-2627-4c98-8016-918ff44e4e64" ></div>
 
         </div>
 

@@ -1,54 +1,42 @@
 
 
-
-let header = document.getElementById('header');
-
-
- 
-// HEADER 
-
+ // HEADER 
+const header = document.getElementById('header');
 function headerChange() {
     if (window.pageYOffset >= header.offsetTop+100 ) {
-        header.classList.replace('header-init','header-fixed');
-       
-        }else{
-            header.classList.replace('header-fixed','header-init');
-        
-            } 
-    }
+        header.classList.replace('header-init','header-fixed');  
+        }else header.classList.replace('header-fixed','header-init');
+       }
+addEventListener('scroll', headerChange);
 
 
-window.addEventListener('scroll', headerChange);
+//DROPDOWN NAV MOVIL
 
-//
-let navContent = document.getElementById("navMovil");
-let openButton = document.getElementById("open-btn");
-let closeButton = document.getElementById("close-btn");
-let navBtn = document.getElementsByClassName("nav-link");
-let ccount = 0;
+const navContent = document.getElementById("navMovil");
+const openButton = document.getElementById('open-btn');
+const closeButton = document.getElementById("close-btn");
+let clickCount = 0;
 
 function openNav() {
-    ccount=ccount+1
-    if(ccount<=1){
+    clickCount=clickCount+1
+    if(clickCount<=1){
     openButton.classList.replace('btn-movil-o-active','btn-movil-o');
-    navContent.classList.add('mobile-nav-active');
+    navContent.classList.replace('mobile-nav-inactive', 'mobile-nav-active');
     closeButton.classList.replace('btn-movil-c','btn-movil-c-active');
-
   }
   else{
     openButton.classList.replace('btn-movil-o-active','btn-movil-o');
     navContent.classList.replace('mobile-nav-inactive','mobile-nav-active');
     closeButton.classList.replace('btn-movil-c','btn-movil-c-active');
- 
-   }
+      }
   }
   
   function closeNav() {
-    
     navContent.classList.replace('mobile-nav-active','mobile-nav-inactive');
     openButton.classList.replace('btn-movil-o','btn-movil-o-active');
-    closeButton.classList.replace('btn-movil-c-active','btn-movil-c');
-
-    
+    closeButton.classList.replace('btn-movil-c-active','btn-movil-c');    
   }
  
+  openButton.addEventListener('click', openNav);
+  closeButton.addEventListener('click', closeNav);
+  
