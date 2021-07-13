@@ -727,8 +727,6 @@ main .botones {
     position: relative;
     font-family: "Roboto Slab";
     top: 169px;
-    align-items: flex-start;
-    padding-left: 10%;
   }
   main .mobile-titles-1 h2 {
     color: #FEC92E;
