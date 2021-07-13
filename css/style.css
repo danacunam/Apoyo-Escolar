@@ -487,8 +487,9 @@ footer .ft-cr p {
 
 .review-mobile-box {
   height: 280px;
-  width: 100%;
-  background-color: transparent;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #FD982D;
   position: relative;
   box-shadow: 0px 0px 70px 0px #00000026;
   top: 20px;
@@ -716,6 +717,9 @@ main .botones {
     background-size: 576px 375px;
     background-position: top;
   }
+  main h2 {
+    font-weight: bold;
+  }
   main .mobile-titles-1 {
     display: flex;
     flex-direction: column;
@@ -816,6 +820,9 @@ main .botones {
   justify-content: center;
   margin-top: 1.2em;
 }
+.nosotros .reviews-title h2 {
+  font-weight: 500;
+}
 .nosotros .review {
   display: flex;
   justify-content: space-around;
@@ -864,7 +871,7 @@ main .botones {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 380px;
     background-color: #fd982d;
   }

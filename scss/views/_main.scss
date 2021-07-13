@@ -28,10 +28,10 @@ main{
         height: 730px;
         background-size:576px 375px;
         background-position: top;
-        
+        h2{font-weight:bold;}
         
         .mobile-titles{
-           
+               
                 &-1{
                     @include mobile-titles;
                     top:169px;

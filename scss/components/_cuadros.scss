@@ -7,10 +7,12 @@
   border: 2px solid map-get($colors, dark-gray);
 }
 
+
 .review-mobile-box {
   height: 280px;
-  width: 100%;
-  background-color: transparent;
+  width: 80%;
+  border-radius:10px;
+  background-color: map-get($colors, orange-1 );
   position: relative;
   box-shadow: 0px 0px 70px 0px #00000026;
   top:20px;

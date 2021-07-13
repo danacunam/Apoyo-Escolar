@@ -36,6 +36,9 @@ background-color: transparent;}
         display: flex;
         justify-content: center;
         margin-top: 1.2em;
+        h2{
+            font-weight: 500;
+        }
     }
 
     .review{
@@ -87,7 +90,7 @@ background-color: transparent;}
             display:flex;
             justify-content: center;
             align-items: center;
-            width:100%;
+            width:100vw;
             height:380px;
             background-color: rgba(map-get($colors, orange-1 ),1);
 

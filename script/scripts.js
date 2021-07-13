@@ -33,7 +33,7 @@ function openNav() {
     navContent.classList.replace('mobile-nav-inactive','mobile-nav-active');
     body.classList.add('no-scroll');
     closeButton.classList.replace('btn-movil-c','btn-movil-c-active');
-    wa.classList.replace('wa-button-2','wa-button-a');
+    wa.classList.replace('wa-button-b','wa-button-a');
       }
   }
   
@@ -42,7 +42,7 @@ function openNav() {
     body.classList.remove('no-scroll');
     openButton.classList.replace('btn-movil-o','btn-movil-o-active');
     closeButton.classList.replace('btn-movil-c-active','btn-movil-c');
-    wa.classList.replace('wa-button-a', 'wa-button-2')    
+    wa.classList.replace('wa-button-a', 'wa-button-b')    
   }
  
   openButton.addEventListener('click', openNav);
