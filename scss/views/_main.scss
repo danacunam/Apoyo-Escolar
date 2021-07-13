@@ -35,8 +35,10 @@ main{
                 &-1{
                     @include mobile-titles;
                     top:169px;
-                   letter-spacing:-1px;
-                    
+                    letter-spacing:-1px;
+                    align-items: flex-start;
+                    padding:0 15%;
+
                     p{font-weight:400;}
                    
                 
