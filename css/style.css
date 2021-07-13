@@ -21,6 +21,10 @@ hr {
   background-color: white;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -400,6 +404,33 @@ footer .ft-cr p {
 .wa-button a p {
   margin: 0;
 }
+.wa-button-a {
+  width: 195px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #23ca62;
+  position: fixed;
+  bottom: 28px;
+  right: 21px;
+  border: none;
+  z-index: 1;
+  animation: wa 0.4s linear forwards;
+}
+.wa-button-a a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Roboto";
+  font-weight: bold;
+  padding: 0 6px;
+}
+.wa-button-a a:hover {
+  color: #f2f2f2;
+}
+.wa-button-a a p {
+  margin: 0;
+}
 .wa-button-b {
   width: 195px;
   height: 48px;
@@ -410,7 +441,7 @@ footer .ft-cr p {
   right: 21px;
   border: none;
   z-index: 1;
-  animation: wa-2 0.4s ease-in forwards;
+  animation: wa-2 0.4s linear forwards;
 }
 .wa-button-b a {
   display: flex;
@@ -433,18 +464,18 @@ footer .ft-cr p {
 
 @keyframes wa {
   0% {
-    top: 360px;
+    opacity: 1;
   }
   100% {
-    top: 650px;
+    opacity: 0;
   }
 }
 @keyframes wa-2 {
   0% {
-    top: 650;
+    opacity: 0;
   }
   100% {
-    top: 360;
+    opacity: 1;
   }
 }
 .review-box {
@@ -791,7 +822,7 @@ main .botones {
 }
 @media screen and (max-width: 576px) {
   .nosotros {
-    padding-top: 90px;
+    padding-top: 30px;
     background-image: none;
     justify-content: flex-start;
   }

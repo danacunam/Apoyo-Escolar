@@ -46,7 +46,7 @@ background-color: transparent;}
     }
 
     @include media(sm){
-        padding-top:$pt-sections*0.6;
+        padding-top:$pt-sections*0.2;
         background-image:none;
         
         justify-content: flex-start;

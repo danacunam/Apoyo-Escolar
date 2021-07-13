@@ -85,15 +85,15 @@
         // @include media(sm){
         //     top:360px;
             
-        //     &-a{
-        //         @include whatsapp;
-        //         animation: wa 0.4s linear forwards;
+             &-a{
+                 @include whatsapp;
+                 animation: wa 0.4s linear forwards;
                 
-        //     }
+                  }
         // }
             &-b{
                 @include whatsapp;
-                animation: wa-2 0.4s ease-in forwards; 
+                animation: wa-2 0.4s linear forwards; 
             }
        
        
@@ -105,13 +105,14 @@
         
 }
 
+
 @keyframes wa{
-    0%{ top:360px};
-    100%{top:650px};
+    0%{ opacity:1};
+    100%{opacity:0};
 }
 @keyframes wa-2{
-    0%{ top:650};
-    100%{top:360};
+    0%{ opacity:0;}
+    100%{opacity:1;};
 }
 
 
