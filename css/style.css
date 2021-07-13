@@ -840,8 +840,8 @@ main .botones {
 
 div.eapps-widget {
   height: 230px;
-  overflow: hidden;
-  z-index: 0;
+  overflow: hidden !important;
+  z-index: 0 !important;
 }
 
 #cursos {
