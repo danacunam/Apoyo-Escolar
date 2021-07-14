@@ -13,11 +13,14 @@
             height: 400px;
             display:flex;
             align-items: center;
+            img{
+                border-radius:10px;
+            }
             .cursos-title{
                 color: map-get($colors,purple-1);
                 font-size: 4.8em;
                 font-family:map-get($fonts, font-2 );
-                margin-bottom:20px;
+                
             } 
             @include media(sm){
                 flex-direction:column;
@@ -29,7 +32,7 @@
                 }
                 .c1-block, .c2-block{
                     padding-bottom: 30px;
-
+                    
                 }
                 
             
@@ -51,7 +54,7 @@
                 strong{
                     @extend .cursos-content-info;
                     font-weight: bold;
-                    font-size: 1.2em;
+                    font-size: 1em;
                 }
 
                 @include media(sm){
@@ -78,7 +81,8 @@
             }
             }
             
-            .first-block,.second-block,.third-block{
+            
+            .second-block,.third-block{
                 @include cursos-block;
                 @include media(sm){
                     padding-bottom:20px;
@@ -144,7 +148,7 @@
               font-size: 1.5em;
               width: 100%;
              text-align: center;
-             border-bottom: 2px solid black;
+             border-bottom: 2px dotted black;
              padding-bottom:20px;
            
           }
@@ -163,7 +167,7 @@
           @include media(sm){
 
                 &-title{
-                    border-bottom: 1px dashed black;
+                    border-bottom: 1px dotted black;
                 }
                 &-logo{
                     display:flex;
@@ -188,8 +192,8 @@
         height: 200px;
         display: flex;
         align-items: center;      
-        border-top: 2px dashed black;
-
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
           .datos-contenedor{
              width:45%;
              text-align:right;
@@ -214,8 +218,7 @@
 
         @include media(sm){
             height: auto;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
+        
             padding: 40px 0;
         }
             .datos-contenedor{

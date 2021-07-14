@@ -699,7 +699,7 @@ footer .ft-cr p {
 }
 .review-box {
   height: 280px;
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
   background-color: #FD982D;
   position: relative;
@@ -707,6 +707,11 @@ footer .ft-cr p {
           box-shadow: 0px 0px 70px 0px #00000026;
   top: 20px;
   border: none;
+}
+@media screen and (max-width: 576px) {
+  .review-box {
+    width: 80%;
+  }
 }
 
 .cursos-box, .cursos-box-6, .cursos-box-5, .cursos-box-4, .cursos-box-3, .cursos-box-2, .cursos-box-1 {
@@ -1078,12 +1083,21 @@ main .botones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
   height: 500px;
+  background-image: url("../images/bg-nosotros.png");
   background-color: #fd982d;
+  background-blend-mode: multiply;
 }
 .nosotros .nosotros-top {
   width: 70%;
@@ -1105,7 +1119,7 @@ main .botones {
   line-height: 1.3em;
 }
 .nosotros .reviews-title {
-  color: #A6A6A5;
+  color: #FFFFFF;
   font-family: "Roboto Slab";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1114,9 +1128,12 @@ main .botones {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 1.2em;
+  position: relative;
+  top: 90px;
 }
 .nosotros .reviews-title h2 {
   font-weight: 500;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .nosotros .review {
   display: -webkit-box;
@@ -1186,12 +1203,6 @@ main .botones {
   }
 }
 
-div.eapps-widget {
-  height: 230px;
-  overflow: hidden !important;
-  z-index: 0 !important;
-}
-
 #cursos {
   max-width: 70%;
   padding: 100px 0;
@@ -1210,11 +1221,13 @@ div.eapps-widget {
       -ms-flex-align: center;
           align-items: center;
 }
+#cursos .cursos-top img {
+  border-radius: 10px;
+}
 #cursos .cursos-top .cursos-title {
   color: #AD8FF5;
   font-size: 4.8em;
   font-family: "Roboto Slab";
-  margin-bottom: 20px;
 }
 @media screen and (max-width: 576px) {
   #cursos .cursos-top {
@@ -1254,7 +1267,7 @@ div.eapps-widget {
 }
 #cursos .cursos-content-info strong {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 @media screen and (max-width: 576px) {
   #cursos .cursos-content-info, #cursos .cursos-content-info strong {
@@ -1282,15 +1295,15 @@ div.eapps-widget {
     font-size: 1em;
   }
 }
-#cursos .cursos-content .first-block, #cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
+#cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
   padding: 40px 0;
   border-bottom: 1.5px dotted black;
 }
-#cursos .cursos-content .first-block .cursos-content-info, #cursos .cursos-content .first-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .first-block strong, #cursos .cursos-content .second-block .cursos-content-info, #cursos .cursos-content .second-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .second-block strong, #cursos .cursos-content .third-block .cursos-content-info, #cursos .cursos-content .third-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .third-block strong {
+#cursos .cursos-content .second-block .cursos-content-info, #cursos .cursos-content .second-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .second-block strong, #cursos .cursos-content .third-block .cursos-content-info, #cursos .cursos-content .third-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .third-block strong {
   width: 100%;
 }
 @media screen and (max-width: 576px) {
-  #cursos .cursos-content .first-block, #cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
+  #cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
     padding-bottom: 20px;
   }
 }
@@ -1355,7 +1368,7 @@ div.eapps-widget {
   font-size: 1.5em;
   width: 100%;
   text-align: center;
-  border-bottom: 2px solid black;
+  border-bottom: 2px dotted black;
   padding-bottom: 20px;
 }
 #cursos .medios-logo {
@@ -1372,7 +1385,7 @@ div.eapps-widget {
 }
 @media screen and (max-width: 576px) {
   #cursos .medios-title {
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dotted black;
   }
   #cursos .medios-logo {
     display: -webkit-box;
@@ -1400,7 +1413,8 @@ div.eapps-widget {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 2px dashed black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 #cursos .datos-banking .datos-contenedor {
   width: 45%;
@@ -1424,8 +1438,6 @@ div.eapps-widget {
 @media screen and (max-width: 576px) {
   #cursos .datos-banking {
     height: auto;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
     padding: 40px 0;
   }
 }
