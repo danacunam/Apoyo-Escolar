@@ -13,9 +13,15 @@
     .bg-us-mobile{
         display:none;
     }
-     .review-mobile{display:flex;
-    justify-content:center;
-background-color: transparent;}
+     .review    {
+         display:flex;
+         justify-content:center;
+         width:100vw;
+         height:500px;
+         background-color: rgba(map-get($colors, orange-1 ),1); 
+               
+        }
+         
 .nosotros-top{
      width:70%;
      align-self: center;
@@ -84,8 +90,8 @@ background-color: transparent;}
             }
         }
 
-        .review { display:none;}
-        .review-mobile{
+      
+        .review{
 
             display:flex;
             justify-content: center;
