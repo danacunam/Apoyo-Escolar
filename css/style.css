@@ -1212,22 +1212,78 @@ main .botones {
     max-width: 85%;
   }
 }
-#cursos .cursos-top {
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#cursos .gtitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
 }
-#cursos .cursos-top img {
+#cursos .gimg {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: imgc;
+  width: 70%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+#cursos .gimg img {
   border-radius: 10px;
+}
+@media screen and (max-width: 576px) {
+  #cursos .gimg {
+    width: 100%;
+    padding: 30px 0 50px 0;
+  }
+}
+#cursos .gtext1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: txt1;
+}
+#cursos .gtext1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: txt2;
+}
+#cursos .cursos-top {
+  padding: 30px 0;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px dotted black;
+      grid-template-areas: "title imgc" "txt1  imgc" "txt2  imgc";
+}
+@media screen and (max-width: 576px) {
+  #cursos .cursos-top {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+        grid-template-areas: "title" "imgc" "txt1" "txt2";
+  }
+  #cursos .gtitle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #cursos .gimg {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  #cursos .gtext1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #cursos .gtext1 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
 }
 #cursos .cursos-top .cursos-title {
   color: #AD8FF5;
   font-size: 4.8em;
   font-family: "Roboto Slab";
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 576px) {
   #cursos .cursos-top {
@@ -1245,6 +1301,25 @@ main .botones {
   }
   #cursos .cursos-top .c1-block, #cursos .cursos-top .c2-block {
     padding-bottom: 30px;
+  }
+}
+#cursos .cursos-top .cursos-list {
+  list-style-type: disc;
+}
+#cursos .cursos-top .cursos-list-item {
+  font-size: 1.3em;
+  font-family: "Roboto";
+  color: #3F4650;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-top: 0;
+  line-height: 25px;
+}
+@media screen and (max-width: 576px) {
+  #cursos .cursos-top .cursos-list-item {
+    width: 95%;
+    padding: 0;
+    font-size: 1em;
   }
 }
 #cursos .cursos-content {
@@ -1276,34 +1351,15 @@ main .botones {
     font-size: 1em;
   }
 }
-#cursos .cursos-content .cursos-list {
-  list-style-type: disc;
-}
-#cursos .cursos-content .cursos-list-item {
-  font-size: 1.3em;
-  font-family: "Roboto";
-  color: #3F4650;
-  font-weight: 400;
-  line-height: 1.3em;
-  margin-top: 0;
-  line-height: 25px;
-}
-@media screen and (max-width: 576px) {
-  #cursos .cursos-content .cursos-list-item {
-    width: 95%;
-    padding: 0;
-    font-size: 1em;
-  }
-}
-#cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
+#cursos .cursos-content .first-block, #cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
   padding: 40px 0;
   border-bottom: 1.5px dotted black;
 }
-#cursos .cursos-content .second-block .cursos-content-info, #cursos .cursos-content .second-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .second-block strong, #cursos .cursos-content .third-block .cursos-content-info, #cursos .cursos-content .third-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .third-block strong {
+#cursos .cursos-content .first-block .cursos-content-info, #cursos .cursos-content .first-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .first-block strong, #cursos .cursos-content .second-block .cursos-content-info, #cursos .cursos-content .second-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .second-block strong, #cursos .cursos-content .third-block .cursos-content-info, #cursos .cursos-content .third-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .third-block strong {
   width: 100%;
 }
 @media screen and (max-width: 576px) {
-  #cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
+  #cursos .cursos-content .first-block, #cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
     padding-bottom: 20px;
   }
 }
@@ -1335,7 +1391,7 @@ main .botones {
   font-family: "Roboto Condensed";
   font-weight: 700;
   text-align: center;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dotted black;
 }
 #cursos .curso-completo .precios {
   margin: 45px 0 65px 0;
