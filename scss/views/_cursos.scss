@@ -205,7 +205,7 @@
           }
           .cbu{
             width:65%;
-            border-left: 2px dashed black;
+            border-left: 2px dotted black;
             height: 60%;
             font-family:map-get($fonts, Roboto );
             color: map-get($colors, dark-gray);
@@ -214,8 +214,8 @@
 
         @include media(sm){
             height: auto;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
             padding: 40px 0;
         }
             .datos-contenedor{
@@ -225,7 +225,7 @@
                 font-size: 0.8em;
             }
             .cbu{
-                border-left: 1px dashed black;
+                border-left: 1px dotted black;
                 p{
                     font-size:0.9em;
                     strong{

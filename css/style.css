@@ -738,7 +738,7 @@ main .botones {
     top: 169px;
     letter-spacing: -1px;
     align-items: flex-start;
-    padding: 0 15%;
+    padding: 0 10%;
   }
   main .mobile-titles-1 h2 {
     color: #FEC92E;
@@ -972,7 +972,7 @@ div.eapps-widget {
 }
 #cursos .cursos-content .first-block, #cursos .cursos-content .second-block, #cursos .cursos-content .third-block {
   padding: 40px 0;
-  border-bottom: 1px dashed black;
+  border-bottom: 1.5px dotted black;
 }
 #cursos .cursos-content .first-block .cursos-content-info, #cursos .cursos-content .first-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .first-block strong, #cursos .cursos-content .second-block .cursos-content-info, #cursos .cursos-content .second-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .second-block strong, #cursos .cursos-content .third-block .cursos-content-info, #cursos .cursos-content .third-block .cursos-content-info strong, #cursos .cursos-content-info .cursos-content .third-block strong {
   width: 100%;
@@ -1075,7 +1075,7 @@ div.eapps-widget {
 }
 #cursos .datos-banking .cbu {
   width: 65%;
-  border-left: 2px dashed black;
+  border-left: 2px dotted black;
   height: 60%;
   font-family: "Roboto";
   color: #3F4650;
@@ -1084,8 +1084,8 @@ div.eapps-widget {
 @media screen and (max-width: 576px) {
   #cursos .datos-banking {
     height: auto;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     padding: 40px 0;
   }
 }
@@ -1096,7 +1096,7 @@ div.eapps-widget {
   font-size: 0.8em;
 }
 #cursos .datos-banking .cbu {
-  border-left: 1px dashed black;
+  border-left: 1px dotted black;
 }
 #cursos .datos-banking .cbu p {
   font-size: 0.9em;
