@@ -1,0 +1,95 @@
+.loader-container{
+    height:100vh;
+    width: 100vw;
+    font-family:map-get($fonts, Roboto-condensed );
+    color: map-get($colors, dark-gray);
+    
+    position:absolute;
+   top:0;
+   z-index:5;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   background-color:white;
+  }
+  
+  .loader
+   { height: $loader-dot--size;
+    width: $loader--width;
+   
+   
+    &-dot {
+      animation: loader linear 1.25s infinite;
+  
+      height: $loader-dot--size ;
+      width: $loader-dot--size ;
+      border-radius: 100%;
+      background-color: black;
+      position: absolute;
+      
+      
+      &:first-child{
+        background-color: map-get($colors, orange-1 );
+        animation-delay: 0.1s;}
+      
+      &:nth-child(2){
+        background-color:map-get($colors, purple-1 );
+        animation-delay: 0.2s;}
+      
+      &:nth-child(3){
+        background-color: map-get($colors, yellow-1 );
+        animation-delay: 0.3s;}
+      
+      &:nth-child(4){
+        background-color: map-get($colors, blue-1 );
+        animation-delay: 0.4s;}
+      
+      &:nth-child(5) {
+        background-color: map-get($colors, darker-orange );
+        animation-delay: 0.5s;}
+    }
+     
+    
+    &-text{
+      position: relative;
+      top: 200%;
+      left: 0;
+      right: 0;
+      width: 4rem;
+      margin: auto;
+  
+      &:after{
+        content: "CARGANDO";
+        
+        animation: loading-text 2.5s forwards;
+         }
+      }
+      
+  @keyframes loader{
+    15%   { transform: translateX(0);opacity:0.25};
+    
+    45%   { transform: translateX( $loader--width - $loader-dot--size );opacity:0.5}
+  
+    65%    {transform: translateX( $loader--width - $loader-dot--size );opacity:0.75}
+    
+    95%    {transform: translateX(0);opacity:1}
+  
+  
+  }
+  
+  @keyframes loading-text{
+    0%    {content: "CARGANDO";opacity:0.3;}
+    
+    25%   { content: "CARGANDO.";opacity:0.5;}
+    
+    50%    {content: "CARGANDO..";opacity:0.7;}
+    
+    75%     {content: "CARGANDO...";opacity:1;};
+   100%     {content: "CARGANDO..."}
+  }}
+  
+  .fade-loader-n{
+      
+          display:none;
+      
+  }

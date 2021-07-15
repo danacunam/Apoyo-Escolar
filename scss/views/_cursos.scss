@@ -6,6 +6,7 @@
 
     @include media(sm){
         max-width:85%;
+        padding-top:60px;
     }
         .gtitle{
             grid-area:title;

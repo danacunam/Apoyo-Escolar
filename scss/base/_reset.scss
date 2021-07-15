@@ -5,10 +5,6 @@
   font-size:$font-size;
 }
 
-// body{
-
-//   position:relative;
-// }
 ul {
   list-style-type: none;
   margin:0;
@@ -24,4 +20,13 @@ hr{
 
 .no-scroll{
   overflow:hidden;
+}
+
+.body-fade{
+  animation: b-fade 0.5s linear forwards;
+}
+
+@keyframes b-fade{
+  from {opacity:0};
+  to {opacity:1};
 }

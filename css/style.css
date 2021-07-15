@@ -26,6 +26,28 @@ hr {
   overflow: hidden;
 }
 
+.body-fade {
+  -webkit-animation: b-fade 0.5s linear forwards;
+          animation: b-fade 0.5s linear forwards;
+}
+
+@-webkit-keyframes b-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes b-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -931,7 +953,7 @@ footer .ft-cr p {
       -ms-flex-align: center;
           align-items: center;
 }
-.box-apuntes h4 {
+.box-apuntes h3 {
   margin: 3px 0 0 0;
   font-size: 1.4em;
   font-family: "Teko";
@@ -992,6 +1014,168 @@ footer .ft-cr p {
   .carousel {
     display: none;
   }
+}
+
+.loader-container {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto Condensed";
+  color: #3F4650;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.loader {
+  height: 20px;
+  width: 90px;
+}
+.loader-dot {
+  -webkit-animation: loader linear 1.25s infinite;
+          animation: loader linear 1.25s infinite;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+}
+.loader-dot:first-child {
+  background-color: #FD982D;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.loader-dot:nth-child(2) {
+  background-color: #AD8FF5;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loader-dot:nth-child(3) {
+  background-color: #FEC92E;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.loader-dot:nth-child(4) {
+  background-color: #8ADFDF;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loader-dot:nth-child(5) {
+  background-color: #FD5A33;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.loader-text {
+  position: relative;
+  top: 200%;
+  left: 0;
+  right: 0;
+  width: 4rem;
+  margin: auto;
+}
+.loader-text:after {
+  content: "CARGANDO";
+  -webkit-animation: loading-text 2.5s forwards;
+          animation: loading-text 2.5s forwards;
+}
+@-webkit-keyframes loader {
+  15% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0.25;
+  }
+  45% {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+    opacity: 0.5;
+  }
+  65% {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+    opacity: 0.75;
+  }
+  95% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  15% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0.25;
+  }
+  45% {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+    opacity: 0.5;
+  }
+  65% {
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+    opacity: 0.75;
+  }
+  95% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loading-text {
+  0% {
+    content: "CARGANDO";
+    opacity: 0.3;
+  }
+  25% {
+    content: "CARGANDO.";
+    opacity: 0.5;
+  }
+  50% {
+    content: "CARGANDO..";
+    opacity: 0.7;
+  }
+  75% {
+    content: "CARGANDO...";
+    opacity: 1;
+  }
+  100% {
+    content: "CARGANDO...";
+  }
+}
+@keyframes loading-text {
+  0% {
+    content: "CARGANDO";
+    opacity: 0.3;
+  }
+  25% {
+    content: "CARGANDO.";
+    opacity: 0.5;
+  }
+  50% {
+    content: "CARGANDO..";
+    opacity: 0.7;
+  }
+  75% {
+    content: "CARGANDO...";
+    opacity: 1;
+  }
+  100% {
+    content: "CARGANDO...";
+  }
+}
+
+.fade-loader-n {
+  display: none;
 }
 
 main {
@@ -1264,6 +1448,7 @@ main .botones {
 @media screen and (max-width: 576px) {
   #cursos {
     max-width: 85%;
+    padding-top: 60px;
   }
 }
 #cursos .gtitle {
