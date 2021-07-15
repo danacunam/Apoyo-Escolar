@@ -1022,31 +1022,25 @@ footer .ft-cr p {
   font-family: "Roboto Condensed";
   color: #3F4650;
   position: absolute;
-  top: 0;
   z-index: 5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: white;
 }
 
 .loader {
   height: 20px;
-  width: 90px;
+  width: 130px;
+  margin: auto;
+  top: 40%;
+  position: relative;
 }
 .loader-dot {
-  -webkit-animation: loader linear 1.25s infinite;
-          animation: loader linear 1.25s infinite;
+  -webkit-animation: loader linear 1.5s 2;
+          animation: loader linear 1.5s 2;
   height: 20px;
   width: 20px;
-  border-radius: 100%;
+  border-radius: 2px;
   background-color: black;
+  border: 1px solid gray;
   position: absolute;
 }
 .loader-dot:first-child {
@@ -1091,54 +1085,54 @@ footer .ft-cr p {
   15% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    opacity: 0.25;
-  }
-  45% {
-    -webkit-transform: translateX(70px);
-            transform: translateX(70px);
     opacity: 0.5;
   }
+  45% {
+    -webkit-transform: translateX(110px);
+            transform: translateX(110px);
+    opacity: 1;
+  }
   65% {
-    -webkit-transform: translateX(70px);
-            transform: translateX(70px);
-    opacity: 0.75;
+    -webkit-transform: translateX(110px);
+            transform: translateX(110px);
+    opacity: 1;
   }
   95% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 @keyframes loader {
   15% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    opacity: 0.25;
-  }
-  45% {
-    -webkit-transform: translateX(70px);
-            transform: translateX(70px);
     opacity: 0.5;
   }
+  45% {
+    -webkit-transform: translateX(110px);
+            transform: translateX(110px);
+    opacity: 1;
+  }
   65% {
-    -webkit-transform: translateX(70px);
-            transform: translateX(70px);
-    opacity: 0.75;
+    -webkit-transform: translateX(110px);
+            transform: translateX(110px);
+    opacity: 1;
   }
   95% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 @-webkit-keyframes loading-text {
   0% {
     content: "CARGANDO";
-    opacity: 0.3;
+    opacity: 0;
   }
   25% {
     content: "CARGANDO.";
-    opacity: 0.5;
+    opacity: 0.25;
   }
   50% {
     content: "CARGANDO..";
@@ -1155,11 +1149,11 @@ footer .ft-cr p {
 @keyframes loading-text {
   0% {
     content: "CARGANDO";
-    opacity: 0.3;
+    opacity: 0;
   }
   25% {
     content: "CARGANDO.";
-    opacity: 0.5;
+    opacity: 0.25;
   }
   50% {
     content: "CARGANDO..";
@@ -2088,4 +2082,61 @@ main .botones {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.main-404 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/bg-404.png");
+  background-position: center;
+}
+@media screen and (max-width: 576px) {
+  .main-404 {
+    background-image: url("../images/bg-404mobile.png");
+  }
+}
+.main-404 .box-apuntes {
+  width: 70px;
+  height: 40px;
+}
+.main-404 .title-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto Slab";
+}
+.main-404 .title-404 h1 {
+  font-size: 110px;
+  color: #FEC92E;
+}
+.main-404 .title-404 p {
+  color: black;
+  font-size: 23px;
+}
+.main-404 .btn {
+  position: relative;
+  top: 80px;
+  width: 170px;
 }

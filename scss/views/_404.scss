@@ -1,0 +1,41 @@
+.main-404{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/bg-404.png');
+   
+    background-position: center;
+   
+    @include media(sm){
+        background-image: url('../images/bg-404mobile.png');
+    }
+    .box-apuntes{
+        width:70px;
+        height:40px;
+    }
+    .title-404{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family:map-get($fonts,font-2);
+        h1{
+            font-size:110px;
+            color:map-get($colors,yellow-1);
+        }
+        p{
+            color:black;
+            font-size:23px;
+        }
+
+    }
+
+
+    .btn{
+        position:relative;
+        top: 80px;
+        width: 170px;
+    }
+}

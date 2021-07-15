@@ -5,7 +5,7 @@ window.onload = function () {
   setTimeout(function () {
     loader.classList.add("fade-loader-n");
     body.classList.replace("no-scroll", "body-fade");
-  }, 1500);
+  }, 500);
 };
 
 
