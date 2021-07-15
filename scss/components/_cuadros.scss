@@ -26,7 +26,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  @include media(ip){
+    width:200px;
+    height:170px;
+  }
   .inner-box {
     width: 70%;
     height: 70%;

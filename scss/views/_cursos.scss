@@ -12,12 +12,35 @@
         }
         .gimg{
             grid-area:imgc;
-            width: 70%;
+            width: 58%;
             justify-self: center;
-            img{ border-radius:10px}
+            padding-top:100px;            
+            img{ border-radius:10px;
+            }
+        
+        .imgCursosMobile{
+            display:none;
+        }  
+
             @include media(sm){
                 width:100%;
                 padding:30px 0 50px 0;
+                .imgCursosMobile{
+                    display:block;
+                }
+                .imgCursosAll{
+                    display:none;
+                }
+            } @include media(ip){
+             
+                padding:30px 0 50px 0;
+
+                .imgCursosMobile{
+                    display:block;
+                }
+                .imgCursosAll{
+                    display:none;
+                }
             }
         }
         .gtext1{
@@ -28,7 +51,7 @@
         }
 
         .cursos-top{
-            padding:30px 0;
+            padding:50px 0;
             height: auto;
             display:grid;
             grid-template-columns: 1fr 1fr;
@@ -38,7 +61,16 @@
             "txt1  imgc"
             "txt2  imgc";
 
-            @include media(sm){
+            @include media(sm) {
+                grid-template-columns: 1fr ;
+                grid-template-areas:
+                "title"
+                "imgc"
+                "txt1"
+                "txt2"
+            }
+
+            @include media(ip) {
                 grid-template-columns: 1fr ;
                 grid-template-areas:
                 "title"
@@ -129,6 +161,12 @@
             grid-gap: 38px;
             align-items:center;
             
+            @include media(ip){
+                
+                grid-gap: 30px;
+                margin:50px 0;
+            }
+
             @include media(sm){
                 grid-template-columns: 100%;
             grid-gap:23px;
@@ -140,6 +178,7 @@
           h3{
              margin-top: 40px;
              padding-bottom:30px;
+             font-size: 1.5em;
              color: map-get($colors, dark-gray ) ;
              font-family: map-get($fonts, Roboto-condensed );
              font-weight: 700;
@@ -176,8 +215,8 @@
               font-size: 1.5em;
               width: 100%;
              text-align: center;
-             border-bottom: 2px dotted black;
-             padding-bottom:20px;
+             border-bottom: 1px dotted black;
+             padding-bottom:30px;
            
           }
          

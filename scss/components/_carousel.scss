@@ -12,6 +12,10 @@
 .carousel-item{
 
     height: 200px;
+    @include media (ip){
+        padding-bottom:220px;
+        }
+  
 }
 .carousel-indicators{
 
@@ -41,6 +45,10 @@
         color: map-get($colors, yellow-1 );
         font-size: 4em;
         }
+
+        @include media (ip){
+            padding-bottom:0px;
+            }   
   
     
 }

@@ -471,6 +471,44 @@ footer .ft-cr p {
     font-size: 7px;
   }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 11px 0;
+  }
+  footer .footer-info span {
+    display: none;
+  }
+  footer .ft-cr {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #3F4650;
+  }
+  footer .ft-cr p {
+    color: white;
+    padding: 7px 0;
+    font-size: 7px;
+  }
+}
 
 .btn {
   display: -webkit-box;
@@ -729,6 +767,12 @@ footer .ft-cr p {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .cursos-box, .cursos-box-6, .cursos-box-5, .cursos-box-4, .cursos-box-3, .cursos-box-2, .cursos-box-1 {
+    width: 200px;
+    height: 170px;
+  }
+}
 .cursos-box .inner-box, .cursos-box-6 .inner-box, .cursos-box-5 .inner-box, .cursos-box-4 .inner-box, .cursos-box-3 .inner-box, .cursos-box-2 .inner-box, .cursos-box-1 .inner-box {
   width: 70%;
   height: 70%;
@@ -911,6 +955,11 @@ footer .ft-cr p {
 .carousel-item {
   height: 200px;
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .carousel-item {
+    padding-bottom: 220px;
+  }
+}
 
 .carousel-indicators {
   z-index: 0;
@@ -932,6 +981,11 @@ footer .ft-cr p {
 .carousel-caption h2 {
   color: #FEC92E;
   font-size: 4em;
+}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .carousel-caption {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1222,17 +1276,38 @@ main .botones {
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   grid-area: imgc;
-  width: 70%;
+  width: 58%;
   -ms-grid-column-align: center;
       justify-self: center;
+  padding-top: 100px;
 }
 #cursos .gimg img {
   border-radius: 10px;
+}
+#cursos .gimg .imgCursosMobile {
+  display: none;
 }
 @media screen and (max-width: 576px) {
   #cursos .gimg {
     width: 100%;
     padding: 30px 0 50px 0;
+  }
+  #cursos .gimg .imgCursosMobile {
+    display: block;
+  }
+  #cursos .gimg .imgCursosAll {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  #cursos .gimg {
+    padding: 30px 0 50px 0;
+  }
+  #cursos .gimg .imgCursosMobile {
+    display: block;
+  }
+  #cursos .gimg .imgCursosAll {
+    display: none;
   }
 }
 #cursos .gtext1 {
@@ -1246,7 +1321,7 @@ main .botones {
   grid-area: txt2;
 }
 #cursos .cursos-top {
-  padding: 30px 0;
+  padding: 50px 0;
   height: auto;
   display: -ms-grid;
   display: grid;
@@ -1256,6 +1331,30 @@ main .botones {
       grid-template-areas: "title imgc" "txt1  imgc" "txt2  imgc";
 }
 @media screen and (max-width: 576px) {
+  #cursos .cursos-top {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+        grid-template-areas: "title" "imgc" "txt1" "txt2";
+  }
+  #cursos .gtitle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #cursos .gimg {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  #cursos .gtext1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #cursos .gtext1 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   #cursos .cursos-top {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1376,6 +1475,12 @@ main .botones {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  #cursos .cursos-content .cursos-cuadros {
+    grid-gap: 30px;
+    margin: 50px 0;
+  }
+}
 @media screen and (max-width: 576px) {
   #cursos .cursos-content .cursos-cuadros {
     -ms-grid-columns: 100%;
@@ -1387,6 +1492,7 @@ main .botones {
 #cursos .curso-completo h3 {
   margin-top: 40px;
   padding-bottom: 30px;
+  font-size: 1.5em;
   color: #3F4650;
   font-family: "Roboto Condensed";
   font-weight: 700;
@@ -1424,8 +1530,8 @@ main .botones {
   font-size: 1.5em;
   width: 100%;
   text-align: center;
-  border-bottom: 2px dotted black;
-  padding-bottom: 20px;
+  border-bottom: 1px dotted black;
+  padding-bottom: 30px;
 }
 #cursos .medios-logo {
   display: -webkit-box;

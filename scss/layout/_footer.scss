@@ -59,4 +59,37 @@ footer{
            
         }
     }
+
+
+@include media(ip){
+
+    flex-direction:column;
+        
+    .footer-info{
+        flex-direction:column;
+        padding:0;
+        align-items: center;
+        width:100%;
+        padding:11px 0  ;
+        
+        span{display:none;}
+        
+    }
+    .ft-cr{
+        width:100%;
+        justify-content: center;
+        align-items: center ;
+      
+        background-color: map-get($colors, dark-gray );
+        
+        p{color:white;
+        padding:7px 0;
+    font-size:7px;}
+       
+    }
+
+    
+}
+
+
 }

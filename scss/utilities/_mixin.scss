@@ -115,4 +115,11 @@
       @content;
     }
   }
+
+  @else if $media==ip {
+    @media only screen and (min-width: 768px) and (orientation:portrait){
+      @content;
+    }
+}
+
 }
