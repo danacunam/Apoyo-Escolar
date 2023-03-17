@@ -1,123 +1,158 @@
+.nosotros {
+  background-image: url("../images/bg-nosotros.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: $pt-sections;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-.nosotros{
-
-    background-image: url('../images/bg-nosotros.png');
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top:$pt-sections;
+  .bg-us-mobile {
+    display: none;
+  }
+  .review {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-   
-    .bg-us-mobile{
-        display:none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 500px;
+    background-image: url("../images/bg-nosotros.png");
+    background-color: rgba(map-get($colors, orange-1), 1);
+    background-blend-mode: multiply;
+  }
+
+  .nosotros-top {
+    width: 70%;
+    align-self: center;
+    margin-bottom: 30px;
+
+    &-title {
+      color: map-get($colors, orange-1);
+      font-size: 4.8em;
+      font-family: map-get($fonts, font-2);
     }
-     .review    {
-         display:flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content:center;
-         width:100vw;
-         height:500px;
-         background-image: url('../images/bg-nosotros.png');
-         background-color: rgba(map-get($colors, orange-1 ),1); 
-         background-blend-mode: multiply;
-               
-        }
-         
-.nosotros-top{
-     width:70%;
-     align-self: center;
-     margin-bottom: 30px;
-    
-    &-title{
-        color: map-get($colors,orange-1);
-        font-size: 4.8em;
-        font-family:map-get($fonts, font-2 );
+    &-info {
+      @include txt-content;
     }
-    &-info{
-       @include txt-content;  
+  }
+  .reviews-title {
+    color: map-get($colors, white);
+    font-family: map-get($fonts, font-2);
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2em;
+    position: relative;
+    top: 90px;
+
+    h2 {
+      font-weight: 500;
+      text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
     }
+  }
+  .review-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .box {
+    width: 200px;
+    //ight: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
     }
-    .reviews-title{
-        color:map-get($colors, white );
-        font-family: map-get($fonts, font-2 );
-        display: flex;
-        justify-content: center;
-        margin-top: 1.2em;
-        position:relative;
-        top: 90px;
+    .name {
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 0.8rem;
+    }
+    .tiempo {
+      font-size: 0.7em;
+      opacity: 0.6;
+    }
+    .review-text {
+      font-weight: 200;
+      text-align: center;
+      font-size: 10px;
+      line-height: 1.1em;
+    }
+    .stars{
+      display:flex;
+      img{
+        width:12px;
+        margin: 0 1px;
+      }
+    }
+  }
 
-        h2{
-            font-weight: 500;
-            text-shadow: 2px 5px 10px rgba(0,0,0,0.3); 
-        }
+  .review {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 10%;
+  }
+
+  @include media(sm) {
+    padding-top: $pt-sections * 0.2;
+    background-image: none;
+
+    justify-content: flex-start;
+    .bg-us-mobile {
+      display: block;
+      position: absolute;
+      top: 750px;
+      z-index: 0;
+      max-width: 100%;
+    }
+    .nosotros-top {
+      width: 85%;
+      align-self: center;
+      &-title {
+        font-size: 2.9em;
+        margin-bottom: 20px;
+      }
+      &-info {
+        font-size: 1.2em;
+      }
+    }
+    .reviews-title {
+      color: map-get($colors, white);
+      font-family: map-get($fonts, font-2);
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      position: relative;
+      top: 50px;
+      h2 {
+        font-size: 1.3em;
+      }
     }
 
-    .review{
-     display:flex;
-     justify-content: space-around;
-     padding: 60px 10%;
-     
+    .review {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 380px;
+      background-color: rgba(map-get($colors, orange-1), 1);
     }
-
-    @include media(sm){
-        padding-top:$pt-sections*0.2;
-        background-image:none;
-        
-        justify-content: flex-start;
-        .bg-us-mobile{
-            display:block;
-            position:absolute;
-            top:750px;
-            z-index:0;
-            max-width:100%;
-        }
-        .nosotros-top{
-            width:85%;
-            align-self: center;
-            &-title{
-                font-size:2.9em;
-                margin-bottom:20px;
-            }
-            &-info{
-                font-size:1.2em;  
-             }
-        }
-        .reviews-title{
-            color:map-get($colors, white );
-            font-family: map-get($fonts, font-2 );
-            display: flex;
-            justify-content: center;
-            margin-top: 0;
-            position:relative;
-            top:50px;
-            h2{
-                font-size:1.3em;
-            }
-        }
-
-      
-        .review{
-
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            width:100vw;
-            height:380px;
-            background-color: rgba(map-get($colors, orange-1 ),1);
-
-
-        }
-
-
-
-    }
+  }
 }
 
 // div.eapps-widget {
-    
+
 //     height: 230px;
 //     overflow: hidden!important;
 //     z-index: 0!important;
